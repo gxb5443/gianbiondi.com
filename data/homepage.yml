@@ -1,19 +1,19 @@
 head:
-  title: "Adrián Moreno Peña | Engineering Lead, web & mobile developer "
-  description: "Personal site for Adrián Moreno Peña, Director of Engineering at SumUp. With a background as computer engineer and experience both as a web and mobile developer and team lead, in multi-cultural environments in Spain, the Netherlands and Denmark. You can find contact information, as well as availability for work, up-to-date curriculum and previous experience."
+  title: "Gianfranco Biondi | Engineering Lead, web & mobile developer "
+  description: "Personal site for Gianfranco Biondi"
 # showcase
 showcase:
   enable: true
-  title: "Hello, I’m Adrián."
-  subtitle: "Director of Engineering"
-  description: "I work at <a target='_blank' href='https://www.sumup.com/'>SumUp</a>, a digital payments company focused in small businesses. My background is diverse (you could say I'm a specialized generalist), but always close to digital technology.<br>I have done a bit of everything, from backend development to mobile apps, devops or team leading and coaching. I love automation as a way to optimize processes and avoid repetitive work, and working in happy agile teams - where work is a way to solve problems, and not a mean by itself."
+  title: "Hello, I’m Gian!"
+  subtitle: "Engineering Leader"
+  description: "I am a passionate and experienced engineering leader, with a background as computer engineer and experience both as an individual contributor and team lead. You can find contact information, as well as availability for work, up-to-date curriculum and previous experience."
   image:
-    alt: "Profile picture of Adrián Moreno Peña (@zetxek), smiling over a petroleum color background"
-    x: "images/adrian.jpg"
-    _2x: "images/adrian@2x.jpg"
+    alt: "Profile picture of Gianfranco Biondi (@gxb5443), smiling over a blue colored background"
+    x: "images/gian.jpg"
+    _2x: "images/gian@2x.jpg"
   imageMobile:
-    alt: "Profile picture of Adrián Moreno Peña (@zetxek), smiling over a petroleum color background"
-    x: "images/adrian.jpg"
+    alt: "Profile picture of Gianfranco Biondi (@gxb5443), smiling over a blue colored background"
+    x: "images/gian.jpg"
 
   button:
     icon: "icon-mail-fill"
@@ -22,33 +22,19 @@ showcase:
 
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/in/adrianmoreno/"
+      URL: "https://www.linkedin.com/in/gianfranco-biondi/"
 
     - icon: "github"
-      URL: "https://github.com/zetxek"
-
-    - icon: "twitter"
-      URL: "https://twitter.com/zetxek"
+      URL: "https://github.com/gxb5443"
 
     - icon: "instagram"
-      URL: "https://www.instagram.com/zetxek"
-
-    - icon: "facebook"
-      URL: "https://www.facebook.com/zetxek"
+      URL: "https://www.instagram.com/gxb5443"
 
 # about
 about:
   enable: true
   title: "Who am I?"
-  content: '<p class="lead">
-    I’m a very easy going, sociable, fast-learner, curious and natural leader. I do what I love, and I love what I do. I lead by example and work side by side with my teams.
-    </p>
-    <p class="lead">
-    My profile is a hybrid of technical and managerial experience, but always related to technological projects. I bring business and product vision to tech teams, partly thanks to having started an developed a company. I am a fast learner, curious to see how technology can improve the users experience in multiple areas. I have a strong motivation and sense of responsibility with myself, my team and clients (or peers), and people like my positive and easy going, can-do attitude.
-    </p>
-    <p class="lead">    
-    On the technical side, I’m a <em>specialized generalist</em>, always working between different areas, such as mobile and web development, devops, team leading... This has involved a variety of languages and frameworks in the web-side, both in the backend and in the client side.
-    </p>'
+  content: '<p class="lead"> I’m a very easy going, sociable, fast-learner, curious and natural leader. I do what I love, and I love what I do. I lead by example and work side by side with my teams. </p> <p class="lead"> My profile is a hybrid of technical and managerial experience, but always related to technological projects. I bring business and product vision to tech teams, partly thanks to having started an developed a company. I am a fast learner, curious to see how technology can improve the users experience in multiple areas. I have a strong motivation and sense of responsibility with myself, my team and clients (or peers), and people like my positive and easy going, can-do attitude. </p> <p class="lead"> On the technical side, I’m a <em>specialized generalist</em>, always working between different areas, such as mobile and web development, devops, team leading... This has involved a variety of languages and frameworks in the web-side, both in the backend and in the client side. </p>'
 
   button:
     icon: "icon-smile-fill"
@@ -63,19 +49,19 @@ education:
   enable: true
   title: "Education"
   items:
-    - university: "University of Santiago de Compostela"
-      year: "2008-2010"
-      degree: "Master in Projects Management"
+    - university: "Rochester Institute of Technology"
+      year: "2006-2012"
+      degree: "Bachelor of Science - Computer Engineering"
 
-    - university: "University of Santiago de Compostela"
-      year: "2004-2007"
-      degree: "Technical Engineering in Computer Systems"
+    - university: "Georgia Institute of Technology"
+      year: "2020-"
+      degree: "Master of Science - Computer Science"
 
 # experience
 experience:
   enable: true
   title: "Experience"
-  description: "Over 15 years of experience working in all kind of project sizes and teams. I have architected & developed digital products to help businesses and improve people's lives, solving complex problems with simple solutions."
+  description: "Over 10 years of experience working in all kind of project sizes and teams. I have architected & developed digital products to help businesses and improve people's lives, solving complex problems with simple solutions."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -84,10 +70,11 @@ experience:
     icon: "icon-profile-fill"
     btnText: "Download résumé"
     URL: "/files/cv_adrian_moreno_english.pdf"
-  button3: 
+  button3:
     icon: "icon-arrow-right"
     btnText: "All experience"
     URL: "/experience"
+
 # Client & Work
 client_and_work:
   title: "Clients & Works"
@@ -158,51 +145,22 @@ client_and_work:
         _2x: "img/works/robo-advisor@2x.jpg"
       is_even: true
 
-# testimonial
-testimonial:
-  enable: false
-  title: "Testimonials"
-  items:
-    - name: "Daniel Jordan"
-      position: "Phonet, CEO"
-      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
-      image:
-        x: "img/testimonials/daniel-jordan.jpg"
-        _2x: "img/testimonials/daniel-jordan@2x.jpg"
-
-    - name: "Jonathan Peters"
-      position: "Textic, CEO"
-      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
-      image:
-        x: "img/testimonials/jonathan-peters.jpg"
-        _2x: "img/testimonials/jonathan-peters@2x.jpg"
-
-    - name: "Antonio Willis"
-      position: "Cyberse, CEO"
-      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
-      image:
-        x: "img/testimonials/antonio-willis.jpg"
-        _2x: "img/testimonials/antonio-willis@2x.jpg"
-
 # contact
 contact:
   enable: true
   title: "Contact"
   form:
-    action: "https://formspree.io/info@adrianmoreno.info"
+    action: "https://formspree.io/f/moqoerba"
     method: "POST"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  phone:
-    title: "Phone Number"
-    number: "+45 31 57 98 27"
   email:
     title: "Email"
-    email: '<a href="mailto:info@adrianmoreno.info">info@adrianmoreno.info</a>'
+    email: '<a href="mailto:info@gianbiondi.com">info@gianbiondi.com</a>'
   address:
     title: "Location"
-    address: "Copenhagen (DK)"
+    address: "New York, NY (USA)"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
