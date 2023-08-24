@@ -1,6 +1,6 @@
 ---
 title: "namely"
-date: 2023-08-14T01:41:53-04:00
+date: 2023-08-10T01:41:53-04:00
 draft: true
 title: "Software Engineer"
 jobTitle: "Software Engineer"
@@ -13,6 +13,6 @@ duration: "December 2014 – March 2016 "
 
 Namely was a start-up focusing on HR and Payroll.
 
-I was hired through a forum focusing on Golang. I was self-taught in the technology and very excited about it. I was hired as their first engineer versed in Golang. The plan was to start to break up our existing Ruby-on-Rails Monolith into Golang and Ruby microservices. The first project in this effort was building a service which managed our customer database and enabled queries for current data as well as historical data.
+I was hired through a forum for Golang developers. I was self-taught in the technology and very excited about it. I was hired as their first engineer versed in Golang. The plan was to start to build-up and multi-technology team and break up our existing Ruby-on-Rails Monolith into Golang and Ruby microservices. The first project in this effort was building a service which managed our customer database and enabled queries for current data as well as historical data.
 
 After this project, I became a founding member of the "Core Services" team which focused on building microservices for common and critical functions like Auth and User Management. I was the main architect for much of this effort.
