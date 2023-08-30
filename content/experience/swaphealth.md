@@ -1,7 +1,7 @@
 ---
 title: "swaphealth"
 date: 2023-08-24T01:41:53-04:00
-draft: true
+draft: false
 title: "CTO - Swap Health"
 jobTitle: "Co-Founder and CTO"
 company: "Swap Health"

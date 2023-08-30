@@ -1,7 +1,7 @@
 ---
 title: "doubleverify"
 date: 2023-08-12T01:41:53-04:00
-draft: true
+draft: false
 title: "Network Security Software Engineer"
 jobTitle: "Network Security Software Engineer"
 company: "Double Verify"

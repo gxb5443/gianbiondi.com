@@ -1,7 +1,7 @@
 ---
 title: "namely"
 date: 2023-08-10T01:41:53-04:00
-draft: true
+draft: false
 title: "Software Engineer"
 jobTitle: "Software Engineer"
 company: "Namely"
