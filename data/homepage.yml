@@ -5,9 +5,9 @@ head:
 showcase:
   enable: true
   title: "Hello, I’m Gian!"
-  subtitle: "Engineering Leader"
+  subtitle: "Engineering Excellence"
   description: |
-    I am a passionate and experienced engineering leader, with a thorough background as a computer engineer and scientist, and experience both as an individual contributor and team lead. You can find my contact information, as well as work availability, up-to-date resumé and details about my previous work experience.
+    I am a passionate and experienced engineer and leader, with a thorough background as a computer engineer and scientist, and experience both as an individual contributor and team lead. You can find my contact information, as well as work availability, up-to-date resumé and details about my previous work experience.
   image:
     alt: "Profile picture of Gianfranco Biondi (@gxb5443), smiling over a blue colored background"
     x: "images/gian.jpg"
@@ -71,7 +71,7 @@ education:
       degree: "Bachelor of Science - Computer Engineering"
 
     - university: "Georgia Institute of Technology"
-      year: "2020-"
+      year: "2020-Present"
       degree: "Master of Science - Computer Science"
 
 # experience
@@ -86,7 +86,7 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download résumé"
-    URL: "/files/cv_adrian_moreno_english.pdf"
+    URL: "/files/resume_gian_biondi_english.pdf"
   button3:
     icon: "icon-arrow-right"
     btnText: "All experience"
@@ -172,9 +172,9 @@ contact:
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  email:
-    title: "Email"
-    email: '<a href="mailto:me@gianbiondi.com">me@gianbiondi.com</a>'
+  #email:
+  #title: "Email"
+  #email: '<a href="mailto:me@gianbiondi.com">me@gianbiondi.com</a>'
   address:
     title: "Location"
     address: "New York, NY (USA)"
