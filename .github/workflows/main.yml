@@ -6,7 +6,7 @@ on:
       - master
       - develop
       - feature/github-actions
-      - '*'
+      - "*"
 
 jobs:
   build-and-deploy:
@@ -14,12 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true # Fetch Hugo themes
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install postcss
         run: npm install postcss-cli
@@ -27,35 +27,15 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.91.2'
+          hugo-version: "0.91.2"
           extended: true
 
       - name: Build
         run: hugo --minify --buildDrafts=true
-      
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v1
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
         with:
-          python-version: 3.8
-      
-      - name: Upload to S3
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: public
-        
-      - uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
+          args: deploy --only hosting
         env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'eu-central-1'   # optional: defaults to us-east-1
-          SOURCE_DIR: 'public'      # optional: defaults to entire repository
-        
-      - name: Deploy to GH Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
