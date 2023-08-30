@@ -57,15 +57,15 @@ theme = "adritian"
   weight = 2
 
 
-  [[menu.footer]]
-  name = "📚 Books"
-  URL = "/books"
-  weight = 3
+  #[[menu.footer]]
+  #name = "📚 Books"
+  #URL = "/books"
+  #weight = 3
 
-  [[menu.footer]]
-  name = "🎤 Public Speaking"
-  URL = "/public-speaking"
-  weight = 4
+  #[[menu.footer]]
+  #name = "🎤 Public Speaking"
+  #URL = "/public-speaking"
+  #weight = 4
 
   [[menu.footer]]
   name = "📨 Contact"
