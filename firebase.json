@@ -5,6 +5,13 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "https://gianfrancobiondi.com",
+        "destination": "https://gianbiondi.com",
+        "type": 301
+      }
     ]
   }
 }
