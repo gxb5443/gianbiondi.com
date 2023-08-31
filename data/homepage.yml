@@ -37,21 +37,20 @@ about:
   title: "Who am I?"
   content: |
     <p class="lead">
-      I’m a very easy going, sociable, fast-learner, curious and natural leader. 
+      I’m easy going, curious, a fast-learner and a natural leader . 
       I do what I love, and I love what I do. I lead by example and love to work side by side with my teams. 
     </p>
     <p class="lead"> 
-      My profile is a hybrid of technical and managerial experience, but always related to 
-      technological projects. I bring business and product vision to tech teams, partly thanks to having started 
-      an developed a company. I am a fast learner, curious to see how technology can improve the users experience 
-      in multiple areas. I have a strong motivation and sense of responsibility with myself, my team and clients (or peers), 
-      and people like my positive and easy going, can-do attitude. 
-    </p> 
-    <p class="lead"> 
-      On the technical side, 
-      I’m a <em>specialized generalist</em>, always working between different areas, such as mobile and web development, 
-      devops, team leading... This has involved a variety of languages and frameworks in the web-side, both in the 
-      backend and in the client side. 
+      My profile is a mix of highly technical as well as leadership experience. 
+      I bring business and product vision to tech teams, partly thanks to having started my own company. 
+      I love exploring how technology can improve the users experience in multiple areas. 
+      I have a strong motivation and sense of responsibility with myself, my team and clients (or peers).
+    </p>
+    <p class="lead">
+      On the technical side, I have a wide array of experience in different areas, such as mobile and web development; 
+      big data; devops; internal tooling; and more. I love learning new technology and tackling
+      interesting problems. I have a strong background in computer science and engineering, and I am always looking for
+      new challenges and a chance to step out of my comfort zone.
     </p>
   button:
     icon: "icon-smile-fill"
