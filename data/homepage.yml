@@ -1,5 +1,5 @@
 head:
-  title: "Gianfranco Biondi | Engineering Lead, web & mobile developer "
+  title: "Gianfranco Biondi | Engineering Lead"
   description: "Personal site for Gianfranco Biondi"
 # showcase
 showcase:
@@ -37,7 +37,7 @@ about:
   title: "Who am I?"
   content: |
     <p class="lead">
-      I’m easy going, curious, a fast-learner and a natural leader . 
+      I’m easy going, curious, a fast-learner and a natural leader. 
       I do what I love, and I love what I do. I lead by example and love to work side by side with my teams. 
     </p>
     <p class="lead"> 
