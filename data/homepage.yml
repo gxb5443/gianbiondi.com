@@ -43,8 +43,8 @@ about:
     <p class="lead"> 
       My profile is a mix of highly technical as well as leadership experience. 
       I bring business and product vision to tech teams, partly thanks to having started my own company. 
-      I love exploring how technology can improve the users experience in multiple areas. 
-      I have a strong motivation and sense of responsibility with myself, my team and clients (or peers).
+      I love exploring how technology can improve the users experience in all sorts of ways. 
+      I have a strong motivation and sense of responsibility with myself, my team, and clients.
     </p>
     <p class="lead">
       On the technical side, I have a wide array of experience in different areas, such as mobile and web development; 
@@ -70,7 +70,7 @@ education:
       degree: "Bachelor of Science - Computer Engineering"
 
     - university: "Georgia Institute of Technology"
-      year: "Expected Graduation: December 2024"
+      year: "Expected Graduation: June 2024"
       degree: "Master of Science - Computer Science"
 
 # experience
