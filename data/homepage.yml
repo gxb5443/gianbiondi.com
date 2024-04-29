@@ -5,9 +5,16 @@ head:
 showcase:
   enable: true
   title: "Hello, I’m Gian!"
-  subtitle: "Engineering Excellence"
+  subtitle: "Engineering Leader in Healthcare Technology"
   description: |
-    I am a passionate and experienced engineer and leader, with a thorough background as a computer engineer and scientist, and experience both as an individual contributor and team lead. You can find my contact information, as well as work availability, up-to-date resumé and details about my previous work experience.
+    Based in the New York City area 🇺🇸,
+    I am a Principal Engineer for Walmart
+    Health and Wellness.
+
+    I am a passionate and experienced engineer and leader, 
+    with a thorough background as a computer engineer and 
+    scientist, and experience both as an individual 
+    contributor and team lead.
   image:
     alt: "Profile picture of Gianfranco Biondi (@gxb5443), smiling over a blue colored background"
     x: "images/gian.jpg"
