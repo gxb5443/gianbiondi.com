@@ -2,7 +2,7 @@ baseURL = "https://gianbiondi.com/"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Gianfranco Biondi · Software Engineer, problem solver"
-theme = "adritian"
+theme = "adritian-free-hugo-theme"
 
 
 # Languages
@@ -19,11 +19,11 @@ theme = "adritian"
 
   # CSS Plugins
   [[params.plugins.css]]
-  link = "css/main.css"
+  URL = "css/main.css"
   [[params.plugins.css]]
-  link = "css/rad-icons.css"
+  URL = "css/rad-icons.css"
   [[params.plugins.css]]
-  link = "css/custom.css"
+  URL = "css/custom.css"
 
   # JS Plugins
   [[params.plugins.js]]
@@ -77,6 +77,7 @@ theme = "adritian"
 
   sections = ["showcase", "about", "education", "experience", "contact"]
   googleTagManagerID = "GTM-M2S75PJ3" # Google Analytics works with Google Tag Manager
+  homepageExperienceCount = 6
 
   [params.logo]
     text1 = "Gianfranco"
@@ -84,7 +85,3 @@ theme = "adritian"
 
   [params.footer]
       copyright = "© Gianfranco Biondi Jr. <a href=\"https://github.com/gxb5443/gianbiondi.com\">Code available in GitHub</a>."
-
-[taxonomies]
-  book_author = "book_authors"
-  book_category = "book_categories"

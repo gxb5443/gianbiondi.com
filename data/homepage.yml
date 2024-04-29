@@ -98,33 +98,33 @@ client_and_work:
 
   clients:
     - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
+        x: "images/clients/asgardia.png"
+        _2x: "images/clients/asgardia@2x.png"
       alt: "Asgardia"
 
     - logo:
-        x: "img/clients/earth-2.png"
-        _2x: "img/clients/earth-2@2x.png"
+        x: "images/clients/earth-2.png"
+        _2x: "images/clients/earth-2@2x.png"
       alt: "Earth 2.0"
 
     - logo:
-        x: "img/clients/goldline.png"
-        _2x: "img/clients/goldline@2x.png"
+        x: "images/clients/goldline.png"
+        _2x: "images/clients/goldline@2x.png"
       alt: "Goldline"
 
     - logo:
-        x: "img/clients/kanba.png"
-        _2x: "img/clients/kanba@2x.png"
+        x: "images/clients/kanba.png"
+        _2x: "images/clients/kanba@2x.png"
       alt: "Kanba"
 
     - logo:
-        x: "img/clients/zoo-tv.png"
-        _2x: "img/clients/zoo-tv@2x.png"
+        x: "images/clients/zoo-tv.png"
+        _2x: "images/clients/zoo-tv@2x.png"
       alt: "Zoo"
 
     - logo:
-        x: "img/clients/ztos.png"
-        _2x: "img/clients/ztos@2x.png"
+        x: "images/clients/ztos.png"
+        _2x: "images/clients/ztos@2x.png"
       alt: "Ztos"
 
   works:
@@ -135,8 +135,8 @@ client_and_work:
         btnText: "Case Study"
         URL: "#"
       image:
-        x: "img/works/radity-finance.jpg"
-        _2x: "img/works/radity-finance@2x.jpg"
+        x: "images/works/radity-finance.jpg"
+        _2x: "images/works/radity-finance@2x.jpg"
       is_even: true
 
     - title: "Swiss Fintech Website"
@@ -146,8 +146,8 @@ client_and_work:
         btnText: "Case Study"
         URL: "#"
       image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
+        x: "images/works/swissfintech.jpg"
+        _2x: "images/works/swissfintech@2x.jpg"
       is_even: false
 
     - title: "Robo Advisor"
@@ -157,8 +157,8 @@ client_and_work:
         btnText: "Case Study"
         URL: "#"
       image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
+        x: "images/works/robo-advisor.jpg"
+        _2x: "images/works/robo-advisor@2x.jpg"
       is_even: true
 
 # contact
