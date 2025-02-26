@@ -141,7 +141,7 @@
   translation: "Download resume"
 
 - id: "experience_button2_url"
-  translation: "/img/general/user-smile-fill.svg"
+  translation: "/files/resume.pdf"
 
 - id: "experience_button3"
   translation: "View all"
