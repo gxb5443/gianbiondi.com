@@ -1,0 +1,227 @@
+## Meta tags
+- id: "meta_title"
+  translation: "Hi, I'm Gian!"
+- id: "meta_description"
+  translation: "Personal Website for Gian Biondi, Engineering Leader"
+- id: "meta_keywords"
+  translation: "gianbiondi, gian, biondi, software, engineering, golang, leadership"
+- id: "meta_author"
+  translation: "Gianfranco Biondi Jr."
+- id: "meta_image"
+  translation: "/img/general/og-image.jpg"
+
+## Header
+
+- id: "logo_alt"
+  translation: "Adritian logo"
+
+- id: "logo_text1"
+  translation: "Gianfranco"
+
+- id: "logo_text2"
+  translation: "Biondi"
+
+- id: "nav_home"
+  translation: "HOME"
+
+## General
+- id: "skipToMainContent"
+  translation: "Skip to main content"
+
+- id: "toggle_navigation"
+  translation: "Toggle navigation"
+
+## Footer
+- id: "footer_notice"
+  translation: "© Gianfranco Biondi 2025"
+
+- id: "language"
+  translation: "Language"
+
+- id: "toggle_theme"
+  translation: "Toggle theme"
+
+- id: "theme_light"
+  translation: "☀️ Light"
+- id: "theme_dark"
+  translation: "🌑 Dark"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Homepage head title
+- id: "head_title"
+  translation: "Hello, I'm Gian!"
+
+- id: "head_description"
+  translation: "Engineering Leader in Software and Technology"
+
+## Homepage showcase
+- id: "showcase_title"
+  translation: "Hello, I'm Gian!"
+
+- id: "showcase_subtitle"
+  translation: "Engineering Leader in Softare and Technology"
+
+- id: "showcase_description"
+  translation: |
+    Based in the New York City area, I am a Principal Engineer
+    for Walmart Health and Wellness. I am a passionate and experienced
+    engineer and leader, with a thorough background as a computer engineer
+    and scientist, and experience as an individual contributor and 
+    team/project lead.
+
+- id: "showcase_button"
+  translation: "Contact Me"
+
+  ## not visible but used for accessibility
+- id: "showcase_image_alt"
+  translation: "A picture of Cool Name"
+
+## Homepage about
+- id: "about_title"
+  translation: "Who am I?"
+
+- id: "about_content"
+  translation: |
+    <p>
+      I'm easy going, curious, a fast-learner, and a natural leader.
+      I do what I love and I love what I do. I lead by example and I love
+      to work side-by-side with my teams.
+
+    <br/>
+
+      My profile is a mix of highly technical 
+      as well as leadership experience. I bring 
+      business and product vision to tech teams, 
+      partly thanks to having started my own company. 
+      I love exploring how technology can improve the 
+      users experience in all sorts of ways. I have a 
+      strong motivation and sense of responsibility to
+      myself, my team, and clients.
+
+    <br/>
+
+      On the technical side, I have a wide array of 
+      experience in different areas, such as mobile and 
+      web development; big data; devops; internal tooling; 
+      and more. I love learning new technology and tackling 
+      interesting problems. I have a strong background in 
+      computer science and engineering, and I am always looking 
+      for new challenges and a chance to step out of my comfort zone.
+
+    </p>
+
+- id: "about_button"
+  translation: "About Me"
+
+## Homepage education
+- id: "education_title"
+  translation: "Education"
+
+## Homepage experience
+- id: "experience_title"
+  translation: "Experience"
+
+- id: "experience_description"
+  translation: |
+    <p>
+      Over 10 years of experience working across many different domains,
+      in all kinds of teams and project sizes. I have architected & developed
+      digital products to help businesses and improve people's lives, solving
+      complex problems with simple solutions.
+    </p>
+
+- id: "experience_button"
+  translation: "LinkedIn"
+
+- id: "experience_button_url"
+  translation: "https://www.linkedin.com/in/gianfranco-biondi/"
+
+- id: "experience_button2"
+  translation: "Download resume"
+
+- id: "experience_button2_url"
+  translation: "/img/general/user-smile-fill.svg"
+
+- id: "experience_button3"
+  translation: "View all"
+
+- id: "experience_button3_url"
+  translation: "/experience"
+
+## Homepage client & work
+- id: "client_work_title"
+  translation: "Clients & Work"
+
+## Homepage newsletter
+- id: "newsletter_title"
+  translation: "Newsletter"
+
+- id: "newsletter_button"
+  translation: "Subscribe"
+
+- id: "newsletter_placeholder"
+  translation: "Your email"
+
+- id: "newsletter_success_message"
+  translation: "Thank you for subscribing to my newsletter!"
+
+- id: "newsletter_error_message"
+  translation: "An error occurred. Please try again."
+
+- id: "newsletter_note"
+  translation: "We'll never share your email with anyone else."
+
+## Homepage testimonials
+- id: "testimonials_title"
+  translation: "Testimonials"
+
+## Homepage contact
+- id: "contact_title"
+  translation: "Contact"
+
+- id: "contact_button"
+  translation: "Send message"
+
+- id: "contact_form_name"
+  translation: "Full Name"
+
+- id: "contact_form_email"
+  translation: "Email Address"
+
+- id: "contact_form_message"
+  translation: "Type Your Message Here"
+
+- id: "contact_phone_title"
+
+- id: "contact_phone_number"
+
+- id: "contact_email_title"
+
+- id: "contact_email_email"
+
+- id: "contact_address_title"
+  translation: "Address"
+
+- id: "contact_address_address"
+
+- id: "contact_button"
+  translation: "Send Message"
+
+## Blog
+- id: "read_more"
+  translation: "Read more"
+
+- id: "published_on"
+  translation: "Published on "
+
+- id: "continue_reading"
+  translation: "Continue reading"
+
+## 404 Page
+- id: "404_title"
+  translation: "Page not found"
+- id: "404_description"
+  translation: "Sorry, but the page you were looking for could not be found."
+- id: "404_button"
+  translation: "Back to homepage"
