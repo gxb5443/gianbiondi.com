@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" /><meta name="theme-color" content="#478079" />
+
+
+<link rel="icon" href="http://localhost:1313/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/icons/icon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/icon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/icons/apple-touch-icon.png" />
+<link rel="manifest" href="http://localhost:1313/site.webmanifest" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+
+<title>
+  
+    
+  
+  Hello, I&#39;m Gian!
+</title><meta name="description" content="Intro - Why I do it There are a lot of cloud provider options today, and many of them are great. Hell, I even work at Amazon, one of the largest of them. …" />
+<link rel="canonical" href="http://localhost:1313/blog/2026-05-16-intro-to-homelab/" />
+
+
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/index.xml" title="Hello, I&#39;m Gian!" />
+<meta name="generator-mode" content="development" />
+<style data-generator="critical-css">@charset "UTF-8";@font-face{font-family:adritian-icons;src:url(fonts/adritian-icons.eot?62019798);src:url(fonts/adritian-icons.eot?62019798#iefix)format('embedded-opentype'),url(fonts/adritian-icons.woff2?62019798)format('woff2'),url(fonts/adritian-icons.woff?62019798)format('woff'),url(fonts/adritian-icons.ttf?62019798)format('truetype'),url(fonts/adritian-icons.svg?62019798#adritian-icons)format('svg');font-weight:400;font-style:normal}@media(min-width:992px){.header .navbar .nav-item{width:auto;border-bottom:none}.header .navbar .nav-item:first-child{border-top:none}.header .navbar .nav-item .nav-link{font-size:14px;padding-top:0;padding-bottom:0}.platform-links{margin-right:-10px}.platform-links [class^=icon-]{font-size:19px;margin-right:10px}h1,h2{margin-bottom:10px}h1{margin-bottom:10px}h2{margin-bottom:10px;font-size:48px}p{line-height:28px}.lead{font-size:18px}.ml-lg-auto{margin-left:auto!important}}.display-1{font-size:calc(1.625rem + 4.5vw);font-weight:300;line-height:1.2}.display-5{font-size:calc(1.425rem + 2.1vw);font-weight:300;line-height:1.2}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.showcase-section .platform-links.shortcode{margin-left:-40px}.rad-showcase{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;position:relative;margin-bottom:-20px;padding-top:120px}@media(min-width:992px){.lead{font-size:18px}.ml-lg-auto{margin-left:auto!important}.header .navbar .nav-item{width:auto;border-bottom:none}.header .navbar .nav-item:first-child{border-top:none}.header .navbar .nav-item .nav-link{font-size:14px;padding-top:0;padding-bottom:0}.platform-links{margin-right:-10px}.platform-links [class^=icon-]{font-size:19px;margin-right:10px}h1,h2{margin-bottom:10px}h1{margin-bottom:10px}h2{margin-bottom:10px;font-size:36px}p{line-height:28px}.showcase-section .platform-links.shortcode{margin-left:-40px}}p{font-size:16px;font-weight:300;line-height:28px;color:#333}.lead{font-size:16px;font-weight:300;line-height:1.2;letter-spacing:0;color:#000}.bd-navbar::after{position:absolute;inset:0;z-index:-1;display:block;content:"";background-image:linear-gradient(rgba(var(--bd-violet-rgb),1),rgba(var(--bd-violet-rgb),.95))}.bd-navbar .dropdown-menu{--bs-dropdown-min-width:12rem;--bs-dropdown-padding-x:.25rem;--bs-dropdown-padding-y:.25rem;--bs-dropdown-link-hover-bg:rgba(var(--bd-violet-rgb), .1);--bs-dropdown-link-active-bg:rgba(var(--bd-violet-rgb), 1);--bs-dropdown-font-size:0.875rem;font-size:.875rem;border-radius:.5rem;box-shadow:var(--bs-box-shadow)}@media(min-width:1200px){.display-5{font-size:3rem}.container{max-width:1140px}.navbar-nav{--bs-navbar-nav-link-padding-x:1rem}.section div[class*=col-] img.image-left-overflow{margin-left:-120px}.rad-showcase{min-height:870px;padding-top:0;margin-bottom:0}.rad-showcase+section{margin-top:-70px}}@media(min-width:992px){.header .navbar .nav-item{width:auto;border-bottom:none}.header .navbar .nav-item:first-child{border-top:none}.header .navbar .nav-item .nav-link{font-size:14px;padding-top:0;padding-bottom:0}.platform-links{margin-right:-10px}.platform-links [class^=icon-]{font-size:19px;margin-right:10px}h1,h2{margin-bottom:10px}h1{margin-bottom:10px}h2{margin-bottom:10px;font-size:36px}.showcase-section .platform-links.shortcode{margin-left:-40px}.lead{font-size:18px}.ml-lg-auto{margin-left:auto!important}}@media(min-width:1200px){.display-5{font-size:3rem}.container{max-width:1140px}.navbar-nav{--bs-navbar-nav-link-padding-x:1rem}.section div[class*=col-] img.image-left-overflow{margin-left:-120px}.rad-showcase{min-height:870px;padding-top:0;margin-bottom:0}.rad-showcase+section{margin-top:-70px}}@media(min-width:992px){.header .navbar-brand{margin-right:16px}.header .navbar-toggler:not(.nav-link){position:relative}.header .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;align-self:flex-end}.header .navbar-collapse{margin-top:0;overflow-y:visible;max-height:unset}.header .navbar .nav-item{width:auto;border-bottom:none}.header .navbar .nav-item:first-child{border-top:none}.header .navbar .nav-item .nav-link{font-size:14px;padding-top:0;padding-bottom:0}.platform-links{margin-right:-10px}.platform-links [class^=icon-]{font-size:19px;margin-right:10px}h1,h2{margin-bottom:10px}h1{margin-bottom:10px}h2{margin-bottom:10px;font-size:36px}.showcase-section .platform-links.shortcode{margin-left:-40px}.lead{font-size:18px}.ml-lg-auto{margin-left:auto!important}}[class^=icon-]:before{font-family:adritian-icons;font-style:normal;font-weight:400;speak:never;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-threads:before{content:'\e800'}.icon-bluesky:before{content:'\e801'}.icon-x-twitter:before{content:'\e802'}.icon-email:before{content:'\e803'}.icon-search:before{content:'\e805'}.icon-user:before{content:'\f007'}.icon-square-twitter:before{content:'\f081'}.icon-square-facebook:before{content:'\f082'}.icon-linkedin:before{content:'\f08c'}.icon-square-github:before{content:'\f092'}.icon-quote-left:before{content:'\f10d'}.icon-face-smile:before{content:'\f118'}.icon-youtube:before{content:'\f167'}.icon-square-xing:before{content:'\f169'}.icon-instagram:before{content:'\f16d'}.icon-dribbble:before{content:'\f17d'}.icon-behance:before{content:'\f1b4'}.icon-codepen:before{content:'\f1cb'}.icon-yelp:before{content:'\f1e9'}.icon-cloud-arrow-down:before{content:'\f381'}:root{--bs-link-color:#478079;--bs-link-color-rgb:71,128,121;--bs-link-hover-color:#2c4f4a;--bs-link-hover-color-rgb:43.70603015,78.79396985,74.48492462;--bs-link-decoration:none}a{color:#478079;text-decoration:none}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#478079;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:71,128,121;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#1c3330;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#dae6e4;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#b5ccc9;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, 0.75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, 0.5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#478079;--bs-link-color-rgb:71,128,121;--bs-link-decoration:none;--bs-link-hover-color:#2c4f4a;--bs-link-hover-color-rgb:43.70603015,78.79396985,74.48492462;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, 0.175);--bs-border-radius:0.375rem;--bs-border-radius-sm:0.25rem;--bs-border-radius-lg:0.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);--bs-box-shadow-sm:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, 0.175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, 0.075);--bs-focus-ring-width:0.25rem;--bs-focus-ring-opacity:0.25;--bs-focus-ring-color:rgba(71, 128, 121, 0.25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,::after,::before{box-sizing:border-box}@media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%}hr{margin:1rem 0;color:inherit;border:0;border-top:var(--bs-border-width)solid;opacity:.25}h1,h2{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;color:var(--bs-heading-color)}h1{font-size:calc(1.375rem + 1.5vw)}@media(min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media(min-width:1200px){h2{font-size:2rem}}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}strong{font-weight:bolder}a{color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));text-decoration:none}code{font-family:var(--bs-font-monospace);font-size:1em}code{font-size:.875em;color:var(--bs-code-color);word-wrap:break-word}a>code{color:inherit}button{border-radius:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}[type=button],button{-webkit-appearance:button}::-moz-focus-inner{padding:0;border-style:none}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit;-webkit-appearance:button}.lead{font-size:1.25rem;font-weight:300}.display-1{font-weight:300;line-height:1.2;font-size:calc(1.625rem + 4.5vw)}@media(min-width:1200px){.display-1{font-size:5rem}}.display-5{font-weight:300;line-height:1.2;font-size:calc(1.425rem + 2.1vw)}.container,.container-fluid{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}@media(min-width:576px){.container{max-width:540px}}@media(min-width:768px){.container{max-width:720px}}@media(min-width:992px){.container{max-width:960px}}@media(min-width:1200px){.display-5{font-size:3rem}.container{max-width:1140px}}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col-6{flex:none;width:50%}.col-12{flex:none;width:100%}@media(min-width:576px){.col-sm-12{flex:none;width:100%}}@media(min-width:768px){.col-md-6{flex:none;width:50%}}@media(min-width:992px){.col-lg-6{flex:none;width:50%}}@media(min-width:1200px){.col-xl-6{flex:none;width:50%}}.btn{--bs-btn-padding-x:0.75rem;--bs-btn-padding-y:0.375rem;--bs-btn-font-family: ;--bs-btn-font-size:1rem;--bs-btn-font-weight:400;--bs-btn-line-height:1.5;--bs-btn-color:var(--bs-body-color);--bs-btn-bg:transparent;--bs-btn-border-width:var(--bs-border-width);--bs-btn-border-color:transparent;--bs-btn-border-radius:var(--bs-border-radius);--bs-btn-hover-border-color:transparent;--bs-btn-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);--bs-btn-disabled-opacity:0.65;--bs-btn-focus-box-shadow:0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);display:inline-block;padding:var(--bs-btn-padding-y)var(--bs-btn-padding-x);font-family:var(--bs-btn-font-family);font-size:var(--bs-btn-font-size);font-weight:var(--bs-btn-font-weight);line-height:var(--bs-btn-line-height);color:var(--bs-btn-color);text-align:center;vertical-align:middle;border:var(--bs-btn-border-width)solid var(--bs-btn-border-color);border-radius:var(--bs-btn-border-radius);background-color:var(--bs-btn-bg)}.btn.show{color:var(--bs-btn-active-color);background-color:var(--bs-btn-active-bg);border-color:var(--bs-btn-active-border-color)}.btn-link{--bs-btn-font-weight:400;--bs-btn-color:var(--bs-link-color);--bs-btn-bg:transparent;--bs-btn-border-color:transparent;--bs-btn-hover-color:var(--bs-link-hover-color);--bs-btn-hover-border-color:transparent;--bs-btn-active-color:var(--bs-link-hover-color);--bs-btn-active-border-color:transparent;--bs-btn-disabled-color:#6c757d;--bs-btn-disabled-border-color:transparent;--bs-btn-box-shadow:0 0 0 #000;--bs-btn-focus-shadow-rgb:99,147,141;text-decoration:none}.collapse:not(.show){display:none}.dropdown,.dropup{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{--bs-dropdown-zindex:1000;--bs-dropdown-min-width:10rem;--bs-dropdown-padding-x:0;--bs-dropdown-padding-y:0.5rem;--bs-dropdown-spacer:0.125rem;--bs-dropdown-font-size:1rem;--bs-dropdown-color:var(--bs-body-color);--bs-dropdown-bg:var(--bs-body-bg);--bs-dropdown-border-color:var(--bs-border-color-translucent);--bs-dropdown-border-radius:var(--bs-border-radius);--bs-dropdown-border-width:var(--bs-border-width);--bs-dropdown-inner-border-radius:calc(var(--bs-border-radius) - var(--bs-border-width));--bs-dropdown-divider-bg:var(--bs-border-color-translucent);--bs-dropdown-divider-margin-y:0.5rem;--bs-dropdown-box-shadow:var(--bs-box-shadow);--bs-dropdown-link-color:var(--bs-body-color);--bs-dropdown-link-hover-color:var(--bs-body-color);--bs-dropdown-link-hover-bg:var(--bs-tertiary-bg);--bs-dropdown-link-active-color:#fff;--bs-dropdown-link-active-bg:#478079;--bs-dropdown-link-disabled-color:var(--bs-tertiary-color);--bs-dropdown-item-padding-x:1rem;--bs-dropdown-item-padding-y:0.25rem;--bs-dropdown-header-color:#6c757d;--bs-dropdown-header-padding-x:1rem;--bs-dropdown-header-padding-y:0.5rem;position:absolute;z-index:var(--bs-dropdown-zindex);display:none;min-width:var(--bs-dropdown-min-width);padding:var(--bs-dropdown-padding-y)var(--bs-dropdown-padding-x);margin:0;font-size:var(--bs-dropdown-font-size);color:var(--bs-dropdown-color);text-align:left;list-style:none;background-color:var(--bs-dropdown-bg);background-clip:padding-box;border:var(--bs-dropdown-border-width)solid var(--bs-dropdown-border-color);border-radius:var(--bs-dropdown-border-radius)}.dropdown-menu[data-bs-popper]{top:100%;left:0;margin-top:var(--bs-dropdown-spacer)}.dropdown-menu-end{--bs-position:end}.dropdown-menu-end[data-bs-popper]{right:0;left:auto}.dropup .dropdown-menu[data-bs-popper]{top:auto;bottom:100%;margin-top:0;margin-bottom:var(--bs-dropdown-spacer)}.dropdown-item{display:block;width:100%;padding:var(--bs-dropdown-item-padding-y)var(--bs-dropdown-item-padding-x);clear:both;font-weight:400;color:var(--bs-dropdown-link-color);text-align:inherit;white-space:nowrap;background-color:initial;border:0;border-radius:var(--bs-dropdown-item-border-radius,0)}.dropdown-item.active{color:var(--bs-dropdown-link-active-color);text-decoration:none;background-color:var(--bs-dropdown-link-active-bg)}.nav-link{display:block;padding:var(--bs-nav-link-padding-y)var(--bs-nav-link-padding-x);font-size:var(--bs-nav-link-font-size);font-weight:var(--bs-nav-link-font-weight);color:var(--bs-nav-link-color);background:0 0;border:0}.navbar{--bs-navbar-padding-x:0;--bs-navbar-padding-y:0.5rem;--bs-navbar-color:rgba(var(--bs-emphasis-color-rgb), 0.65);--bs-navbar-hover-color:rgba(var(--bs-emphasis-color-rgb), 0.8);--bs-navbar-disabled-color:rgba(var(--bs-emphasis-color-rgb), 0.3);--bs-navbar-active-color:rgba(var(--bs-emphasis-color-rgb), 1);--bs-navbar-brand-padding-y:0.3125rem;--bs-navbar-brand-margin-end:1rem;--bs-navbar-brand-font-size:1.25rem;--bs-navbar-brand-color:rgba(var(--bs-emphasis-color-rgb), 1);--bs-navbar-brand-hover-color:rgba(var(--bs-emphasis-color-rgb), 1);--bs-navbar-nav-link-padding-x:0.5rem;--bs-navbar-toggler-padding-y:0.25rem;--bs-navbar-toggler-padding-x:0.75rem;--bs-navbar-toggler-font-size:1.25rem;--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");--bs-navbar-toggler-border-color:rgba(var(--bs-emphasis-color-rgb), 0.15);--bs-navbar-toggler-border-radius:var(--bs-border-radius);--bs-navbar-toggler-focus-width:0.25rem;position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:var(--bs-navbar-padding-y)var(--bs-navbar-padding-x)}.navbar>.container-fluid{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between}.navbar-brand{padding-top:var(--bs-navbar-brand-padding-y);padding-bottom:var(--bs-navbar-brand-padding-y);margin-right:var(--bs-navbar-brand-margin-end);font-size:var(--bs-navbar-brand-font-size);color:var(--bs-navbar-brand-color);white-space:nowrap}.navbar-nav{--bs-nav-link-padding-x:0;--bs-nav-link-padding-y:0.5rem;--bs-nav-link-font-weight: ;--bs-nav-link-color:var(--bs-navbar-color);--bs-nav-link-hover-color:var(--bs-navbar-hover-color);--bs-nav-link-disabled-color:var(--bs-navbar-disabled-color);display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .dropdown-menu{position:static}.navbar-collapse{flex-grow:1;flex-basis:100%;align-items:center}.navbar-toggler{padding:var(--bs-navbar-toggler-padding-y)var(--bs-navbar-toggler-padding-x);font-size:var(--bs-navbar-toggler-font-size);line-height:1;color:var(--bs-navbar-color);background-color:initial;border:var(--bs-border-width)solid var(--bs-navbar-toggler-border-color);border-radius:var(--bs-navbar-toggler-border-radius)}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;background-image:var(--bs-navbar-toggler-icon-bg);background-repeat:no-repeat;background-position:50%;background-size:100%}@media(min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x)}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}:root{--bs-btn-close-filter: }:root{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}.visually-hidden{width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.visually-hidden:not(caption){position:absolute!important}.d-block{display:block!important}.d-grid{display:grid!important}.d-flex{display:flex!important}.d-none{display:none!important}.flex-column-reverse{flex-direction:column-reverse!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}.my-4{margin-top:1.5rem!important;margin-bottom:1.5rem!important}.my-auto{margin-top:auto!important;margin-bottom:auto!important}.ms-2{margin-left:.5rem!important}.p-0{padding:0!important}.px-0{padding-right:0!important;padding-left:0!important}.py-2{padding-top:.5rem!important;padding-bottom:.5rem!important}.pb-0{padding-bottom:0!important}.gap-2{gap:.5rem!important}@media(min-width:768px){.d-md-none{display:none!important}.flex-md-row{flex-direction:row!important}}@media(min-width:992px){.d-lg-none{display:none!important}.px-lg-2{padding-right:.5rem!important;padding-left:.5rem!important}}.bd-navbar{padding:.75rem 0;background-color:initial}@media(forced-colors){.bd-navbar{background-color:Canvas}}.bd-navbar::after{display:none}.bd-navbar .navbar-toggler{padding:0;margin-right:-.5rem;border:0}.bd-navbar .navbar-brand{color:#fff}.bd-navbar .nav-link,.bd-navbar .navbar-toggler{padding-right:.25rem;padding-left:.25rem;color:rgba(255,255,255,.85)}.bd-navbar .dropdown-menu{--bs-dropdown-min-width:12rem;--bs-dropdown-padding-x:.25rem;--bs-dropdown-padding-y:.25rem;--bs-dropdown-link-hover-bg:rgba(71, 128, 121, 0.1);--bs-dropdown-link-active-bg:#478079;--bs-dropdown-font-size:0.875rem;font-size:.875rem;border-radius:.5rem;box-shadow:var(--bs-box-shadow)}.bd-navbar .dropdown-menu li+li{margin-top:.125rem}.bd-navbar .dropdown-menu .dropdown-item{border-radius:.25rem}.bd-navbar .dropdown-menu .active{font-weight:600}.bd-navbar .dropdown-menu-end{--bs-dropdown-min-width:8rem}.header .navbar .nav-item.language-selector,.header .navbar .nav-item.theme-selector{overflow:visible}.header .navbar .nav-item.language-selector .nav-link,.header .navbar .nav-item.theme-selector .nav-link{padding:0}.language-selector li.choice{padding:0}.btn{display:-webkit-inline-box;display:inline-flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;border-radius:0;white-space:nowrap;line-height:1;font-weight:700;font-size:14px;padding:14px 15px}[class^=icon-]{font-size:19px}.rad-subscription-group #rad-subscription-fail,.rad-subscription-group #rad-subscription-success{-webkit-box-flex:1;flex:1;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.rad-subscription-group #rad-subscription-fail p,.rad-subscription-group #rad-subscription-success p{color:#fff;margin-bottom:0;width:100%}.about__profile-picture{-webkit-box-flex:0;flex:0 0 calc(100% + 80px);max-width:calc(100% + 80px);width:calc(100% + 80px);margin-left:-40px;margin-right:-40px;margin-top:40px}.about__profile-picture img{min-width:200px;min-height:200px}html,html body{min-height:100%}@media(min-width:768px){.about__profile-picture{margin-top:0;-webkit-box-flex:0;flex:0 0 50%;max-width:50%;width:50%;margin-left:0;margin-right:0}}html body{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-direction:normal}html{height:100%;overflow-x:hidden}html body{display:flex;flex-direction:column;overflow:hidden;color:#000;font-family:Helvetica,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;font-family:Helvetica;letter-spacing:.3px;word-spacing:0;visibility:visible;font-weight:400}.section{position:relative;padding-top:60px;padding-bottom:60px}@media(min-width:992px){.section{padding-top:80px;padding-bottom:80px}}.section div[class*=col-] img{max-width:100%}.section div[class*=col-] img.image-left-overflow{margin-left:0}@media(min-width:768px){.section div[class*=col-] img.image-left-overflow{margin-left:-50px}}.header{padding-top:20px}.header::before{position:absolute;left:0;top:0;opacity:0;content:"";width:100%;height:100%;background-image:none;background-size:100% 100%;background-position:50% 100%}.header .navbar-brand,.header .navbar-nav{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-direction:normal}.header .navbar{-webkit-box-pack:center;justify-content:center}@media(min-width:992px){.section div[class*=col-] img.image-left-overflow{margin-left:-75px}.header{padding-top:35px}.header .navbar{-webkit-box-pack:justify;justify-content:space-between}}.header .navbar-brand{display:flex;flex-direction:column;-webkit-box-pack:start;justify-content:flex-start;-webkit-box-align:start;align-items:flex-start;margin-right:0}.header .navbar-brand span{display:block}.header .navbar-brand span:first-child{align-self:center;font-size:25px;font-weight:900;letter-spacing:-1.17px;color:#ae1b13}@media(min-width:768px){.header .navbar-brand span:first-child{font-size:32.9px}}.header .navbar-brand span:nth-child(2){margin-top:-20px;align-self:center;font-family:AutumnMoon;font-size:25px;font-weight:400;letter-spacing:-1.17px;color:#000}@media(min-width:768px){.header .navbar-brand span:nth-child(2){font-size:32.9px;margin-top:-26px}}.header .navbar-toggler:not(.nav-link){position:absolute;left:0;top:14px;border:none}.header .navbar-nav{display:flex;flex-direction:column;-webkit-box-pack:start;justify-content:flex-start;-webkit-box-align:center;align-items:center}.header .navbar-collapse{margin-top:30px;overflow-y:auto;max-height:calc(100vh - 123px)}@media(min-width:992px){.header .navbar-brand{margin-right:16px}.header .navbar-toggler:not(.nav-link){position:relative}.header .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;align-self:flex-end}.header .navbar-collapse{margin-top:0;overflow-y:visible;max-height:unset}.header .navbar .nav-item.dropdown{overflow:visible}}.header .navbar .nav-item{width:100%;border-bottom:1px solid rgba(0,0,0,.1);overflow:hidden}.header .navbar .nav-item *{box-sizing:border-box}.header .navbar .nav-item:first-child{border-top:1px solid rgba(0,0,0,.1)}.header .navbar .nav-item .nav-link{position:relative;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;min-height:50px;font-size:18px;font-weight:700;color:#000;padding-top:20px;padding-bottom:20px}a.nav-link::after{content:"";position:absolute;left:var(--bs-navbar-nav-link-padding-x);bottom:5px;height:1px;width:calc(100% - 2 * (var(--bs-navbar-nav-link-padding-x)));background-color:rgba(0,0,0,.6);will-change:transform;-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transform:scaleX(0);transform:scaleX(0)}.header .navbar-light .navbar-nav .btn-link,.header .navbar-light .navbar-nav .nav-link{color:#000}.footer p{color:#fff}.footer__right{color:#fff;display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;-webkit-box-align:center;align-items:center;grid-area:right}.footer__links{-webkit-box-flex:1;flex:1;grid-area:links;margin-top:30px;margin-bottom:30px}.rad-showcase{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;position:relative;z-index:1;margin-bottom:-20px;padding-top:120px}@media(min-width:968px){.rad-showcase{min-height:870px;padding-top:0;margin-bottom:0}}.rad-showcase .container{position:relative;z-index:2}.platform-links{margin-top:40px;margin-right:-5px}.platform-links [class^=icon-]{margin-right:5px;font-size:17px;color:#000}.rad-showcase+section{margin-top:0}@media(min-width:1200px){.navbar-nav{--bs-navbar-nav-link-padding-x:1rem}.section div[class*=col-] img.image-left-overflow{margin-left:-120px}.rad-showcase{min-height:870px;padding-top:0;margin-bottom:0}.rad-showcase+section{margin-top:-70px}}.profile-image img{max-inline-size:100%;block-size:auto}.profile-image img{margin-top:40px}.header .navbar-brand{flex-direction:row}.header .navbar-brand span{display:inline}.header .navbar-brand span:nth-child(2){font-family:inherit;margin-top:0}.about__profile-picture img{object-fit:contain}@media only screen and (max-width:768px){.header .navbar-brand{margin-top:10px}}@media only screen and (min-width:992px) and (max-width:1280px){.header{padding-top:10px}}@media only screen and (min-width:968px) and (max-width:992px){.rad-showcase{padding-top:100px}}@media only screen and (min-width:992px){.rad-showcase{padding-top:120px}}.btn-link,.dropdown-item.active,a{text-decoration:none}img{vertical-align:middle}.dropdown-menu,body{text-align:left}button{text-transform:none}code{background-color:var(--bs-gray-100);padding:.2em .4em;border-radius:3px;font-size:.9em}.highlight-wrapper .copy-code-btn .copy-text{display:none}@media print and (prefers-color-scheme:dark){body{color:#000!important}}.header .navbar-brand span:first-child{color:#478079}.header .container{padding-left:10px}.container{padding-left:24px;padding-right:24px}h1,h2{font-weight:700;line-height:normal;color:#000;margin-bottom:8px}@media(min-width:992px){.header .navbar .nav-item{width:auto;border-bottom:none}.header .navbar .nav-item:first-child{border-top:none}.header .navbar .nav-item .nav-link{font-size:14px;padding-top:0;padding-bottom:0;white-space:nowrap}.platform-links{margin-right:-10px}.platform-links [class^=icon-]{font-size:19px;margin-right:10px}h1,h2{margin-bottom:10px}}h1,h2{margin-bottom:16px}h2{font-size:32px}@media(min-width:992px){h1{margin-bottom:10px}h2{margin-bottom:10px;font-size:36px}.showcase-section .platform-links.shortcode{margin-left:-40px}}p{font-size:16px;font-weight:300;line-height:1.5;margin-bottom:.75rem;color:#000}strong{font-weight:600}.display-1{font-size:36px;font-weight:800;line-height:normal;color:#000}@media(min-width:992px){.display-1{font-size:60px}}.lead{margin-bottom:1rem}.lead a{color:#000;font-weight:600;text-decoration:underline;text-underline-position:from-font;text-decoration-style:solid;text-decoration-thickness:1px}.lead{font-size:16px;font-weight:300;line-height:1.5;letter-spacing:0;color:#000}br{content:"";margin:2em;display:block;font-size:24%}@media(min-width:992px){.lead{font-size:18px}.ml-lg-auto{margin-left:auto!important}}.dropdown-item.selected{font-weight:700}a.dropdown-item.translation,li.dropdown-item.current.selected{width:100%;padding:4px 10px}li.dropdown-item.choice a{padding-left:30px}.dropdown-menu button[aria-pressed=true]{font-weight:700}.skip-to-content-link{position:absolute;left:-9999px;z-index:999;padding:1em;background-color:#fff;color:#000;opacity:0}.rad-waiting{opacity:0}.rad-waiting.rad-fade-down{transform:translateY(-20px)}@keyframes radFadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:none}}.rad-animate.rad-fade-down{animation:.4s ease-out both radFadeDown}@media(prefers-reduced-motion:reduce){.rad-fade-down{opacity:1!important;transform:none!important;animation:none!important}.rad-waiting{opacity:1!important;transform:none!important}}
+</style>
+  <link
+    rel="preload"
+    href="/css/bundle.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+     />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="/css/bundle.css"
+       />
+  </noscript>
+    
+    <link
+      rel="stylesheet"
+      href="/scss/default-adritian.css"
+       />
+
+
+
+  
+  <script>
+    
+    (function() {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme) {
+        if (storedTheme === 'auto') {
+          const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme-auto', 'true');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', storedTheme);
+        }
+      } else {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme-auto', 'true');
+      }
+    })();
+  </script>
+  <script defer src="/js/color-modes.js"></script>
+  <script defer src="/js/navbar-overflow.js" data-navbar-overflow-mode="dropdown"></script>
+  
+  <script
+    defer
+    src="https://www.googletagmanager.com/gtag/js?id=GTM-M2S75PJ3"></script>
+  <script defer src="/js/gtag.min.js"></script>
+
+<link rel="preload" href="http://localhost:1313/js/library/lozad.min.js" as="script">
+<script async src="http://localhost:1313/js/library/lozad.min.js"></script>
+
+<meta property="og:url" content="http://localhost:1313/blog/2026-05-16-intro-to-homelab/">
+  <meta property="og:site_name" content="Gianfranco Biondi | Engineering Leader">
+  <meta property="og:title" content="Gianfranco Biondi | Engineering Leader">
+  <meta property="og:description" content="Intro - Why I do it There are a lot of cloud provider options today, and many of them are great. Hell, I even work at Amazon, one of the largest of them. So why then do I homelab? For me, there are many reasons and most of them are the usual suspects: privacy, control over my own data, the sweet satisfaction of building something myself. The thought of someone sneakily reading my personal items, my writing, my code, my photos and training an AI on it is a major turn off for sure. However, the biggest reason is learning and expanding my skills. My homelab gives me a playground to try out new ideas, new technologies, to really level up my abilities. I’m the kind of person who winds down from my job in big tech by tinkering (or essentially I wind down from a long day of coding with more coding). I’m always chasing problems to solve and with homelabbing, there is certainly no shortage. This hobby certainly isn’t for everyone: it’s nothing but delicious sidequest after sidequest. You can’t beat the ease of a traditional cloud provider like AWS or even Digital Ocean or something when just spinning up simple apps or services. But since you’re here, I assume you have let your curiosity get the better of you and you’re ready to venture down the rabbit hole yourself. So for you fellow techno-masochists, I am writing this series on how I homelab. I’ll cover my journey, my setup, and some interesting projects like setting up data backups using dynamic credentials, exposing services to the wild internet, and orchestrating anything and everything!">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="og:image" content="http://localhost:1313/img/og-img.png">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/img/og-img.png">
+  <meta name="twitter:title" content="Gianfranco Biondi | Engineering Leader">
+  <meta name="twitter:description" content="Intro - Why I do it There are a lot of cloud provider options today, and many of them are great. Hell, I even work at Amazon, one of the largest of them. So why then do I homelab? For me, there are many reasons and most of them are the usual suspects: privacy, control over my own data, the sweet satisfaction of building something myself. The thought of someone sneakily reading my personal items, my writing, my code, my photos and training an AI on it is a major turn off for sure. However, the biggest reason is learning and expanding my skills. My homelab gives me a playground to try out new ideas, new technologies, to really level up my abilities. I’m the kind of person who winds down from my job in big tech by tinkering (or essentially I wind down from a long day of coding with more coding). I’m always chasing problems to solve and with homelabbing, there is certainly no shortage. This hobby certainly isn’t for everyone: it’s nothing but delicious sidequest after sidequest. You can’t beat the ease of a traditional cloud provider like AWS or even Digital Ocean or something when just spinning up simple apps or services. But since you’re here, I assume you have let your curiosity get the better of you and you’re ready to venture down the rabbit hole yourself. So for you fellow techno-masochists, I am writing this series on how I homelab. I’ll cover my journey, my setup, and some interesting projects like setting up data backups using dynamic credentials, exposing services to the wild internet, and orchestrating anything and everything!">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Engineering Leader with over 14 years of experience leading teams and initiatives of all sizesEngineering Leader with over 14 years of experience leading teams and initiatives of all sizes","image":["http://localhost:1313/img/og-img.png"],"inLanguage":"en","name":"Gianfranco Biondi | Engineering Leader","publisher":{"@type":"Person","image":"http://localhost:1313/img/og-preview.png","name":"Gianfranco Biondi","sameAs":["https://www.linkedin.com/in/gianfrancobiondi/","https://github.com/gxb5443"],"url":"https://gianbiondi.com/"},"url":"http://localhost:1313/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","image":"http://localhost:1313/img/og-preview.png","name":"Gianfranco Biondi","sameAs":["https://www.linkedin.com/in/gianfrancobiondi/","https://github.com/gxb5443"],"url":"https://gianbiondi.com/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","image":"http://localhost:1313/img/og-preview.png","name":"Gianfranco Biondi","sameAs":["https://www.linkedin.com/in/gianfrancobiondi/","https://github.com/gxb5443"],"url":"https://gianbiondi.com/"},"description":"Engineering Leader with over 14 years of experience leading teams and initiatives of all sizesEngineering Leader with over 14 years of experience leading teams and initiatives of all sizes","headline":"Gianfranco Biondi | Engineering Leader","image":["http://localhost:1313/img/og-img.png"],"mainEntityOfPage":{"@id":"http://localhost:1313/blog/2026-05-16-intro-to-homelab/","@type":"WebPage"},"publisher":{"@type":"Person","image":"http://localhost:1313/img/og-preview.png","name":"Gianfranco Biondi","sameAs":["https://www.linkedin.com/in/gianfrancobiondi/","https://github.com/gxb5443"],"url":"https://gianbiondi.com/"},"url":"http://localhost:1313/blog/2026-05-16-intro-to-homelab/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"http://localhost:1313/","name":"Home","position":1},{"@type":"ListItem","item":"http://localhost:1313/blog/","name":"Blog","position":2},{"@type":"ListItem","item":"http://localhost:1313/blog/2026-05-16-intro-to-homelab/","name":"","position":3}]}</script>
+
+    
+
+    <meta name="view-transition" content="same-origin" />
+</head>
+
+<body class=" page-2026-05-16-intro-to-homelab">
+    
+<div class="reading-progress-bar" aria-hidden="true">
+  <div class="reading-progress-fill" id="reading-progress"></div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var bar = document.getElementById('reading-progress');
+  if (!bar) return;
+  var article = document.getElementById('main-content');
+  if (!article) return;
+
+  function update() {
+    var rect = article.getBoundingClientRect();
+    var total = rect.height - window.innerHeight;
+    if (total <= 0) { bar.style.width = '100%'; return; }
+    var progress = Math.min(Math.max(-rect.top / total, 0), 1);
+    bar.style.width = (progress * 100) + '%';
+  }
+
+  var ticking = false;
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(function() { update(); ticking = false; });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', requestTick);
+  update();
+});
+</script>
+
+    
+
+
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-M2S75PJ3"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+
+
+
+<a href="#main-content" 
+    class="skip-to-content-link"
+    aria-label='Skip to main content'>
+  Skip to main content
+</a>
+
+<header class="header fixed-top" id="header">
+  <div class="container">
+    <nav class="navbar bd-navbar navbar-expand-lg navbar-light p-0" aria-label='Primary navigation'>
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="/">
+            
+          <span>Gianfranco</span>
+          <span>Biondi</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent, #header"
+          aria-controls="navbarSupportedContent header"
+          aria-expanded="false"
+          aria-label='Toggle navigation'
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="/#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="/#experience">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="/blog">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="/#contact">CONTACT</a>
+            </li>
+            <li class="dropdown theme-selector nav-item">
+              
+              
+              
+<div id='header-color-selector'
+  class='d-grid gap-2 col-6 mx-auto nav-link dropdown  '>
+  <button class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show bd-theme-selector"
+    id='bd-theme-header' type="button" aria-expanded="false"
+    aria-controls="theme-dropdown-header" aria-haspopup="true" data-bs-toggle="dropdown"
+    data-bs-display="static" aria-label='Toggle theme'>
+    <span class="theme-icon auto d-none" aria-hidden="true"></span>
+    <span class="current-theme">✨ Auto</span>
+    <span class="d-lg-none ms-2 visually-hidden bd-theme-text" id="bd-theme-text-header">Toggle theme</span>
+  </button>
+  <ul id="theme-dropdown-header" class="dropdown-menu dropdown-menu-end " aria-labelledby="bd-theme-text-header" data-bs-popper="static">
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light"
+        aria-pressed="true">
+        ☀️ Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+        aria-pressed="false">
+        🌑 Dark
+        <span class="theme-icon dark d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+        aria-pressed="false">
+        ✨ Auto
+        <span class="theme-icon light d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header> 
+  <section id="breadcrumb-bar" class="breadcrumb-bar container">
+    <nav aria-label="breadcrumb" class="d-print-none">
+        <ol class="breadcrumbs">
+            <li class="breadcrumb-item">
+                <a href="/" class="breadcrumb-link">
+                    <span class="breadcrumb-icon" aria-hidden="true">🏠</span>
+                    <span class="breadcrumb-text">Home</span>
+                </a>
+            </li><li class="breadcrumb-item">
+                <a href="/blog" class="breadcrumb-link">
+                    <span class="breadcrumb-text">Blog</span>
+                </a>
+            </li><li class="breadcrumb-item active" aria-current="page">
+                <span class="breadcrumb-text"></span>
+            </li></ol>
+    </nav>
+</section>
+
+
+
+    <main class="container">
+        
+<section id="blog-single" class="blog blog-single section section--border-bottom rad-animation-group flex-grow-1">
+  <article id="main-content" tabindex="-1" class="blog-post" aria-labelledby="blog-post-title">
+    <header class="post-header">
+      <h1 id="blog-post-title"><a href="/blog/2026-05-16-intro-to-homelab/"></a></h1>
+
+      <div id="meta" class="light-border-bottom">
+        <div class="post-meta">
+          <div class="post-meta-info">
+            <span class="published-label">Published on </span>
+            <time id="date" class="date" datetime="0001-01-01">Mon Jan 1, 0001</time>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <span id="wordcount" class="wordcount">5171 Words</span>
+            
+            
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <span id="reading-time" class="reading-time">25 min read</span>
+            
+          </div>
+          
+          
+          
+          
+          
+          
+          
+           
+        </div>
+      </div>
+    </header>
+
+    
+
+
+    <div class="row flex-column-reverse flex-md-row rad-fade-down">
+      <div class="col-12 post-content"><h2 id="intro---why-i-do-it">Intro - Why I do it</h2>
+<p>There are a lot of cloud provider options today, and many of them are great. Hell, I even work at Amazon, one of the largest of them. So why then do I homelab? For me, there are many reasons and most of them are the usual suspects: privacy, control over my own data, the sweet satisfaction of building something myself. The thought of someone sneakily reading my personal items, my writing, my code, my photos and training an AI on it is a major turn off for sure. However, the biggest reason is learning and expanding my skills. My homelab gives me a playground to try out new ideas, new technologies, to really level up my abilities. I’m the kind of person who winds down from my job in big tech by tinkering (or essentially I wind down from a long day of coding with more coding). I’m always chasing problems to solve and with homelabbing, there is certainly no shortage. This hobby certainly isn’t for everyone: it’s nothing but delicious sidequest after sidequest. You can’t beat the ease of a traditional cloud provider like AWS or even Digital Ocean or something when just spinning up simple apps or services. But since you’re here, I assume you have let your curiosity get the better of you and you’re ready to venture down the rabbit hole yourself. So for you fellow techno-masochists, I am writing this series on how I homelab. I’ll cover my journey, my setup, and some interesting projects like setting up data backups using dynamic credentials, exposing services to the wild internet, and orchestrating anything and everything!</p>
+<h3 id="the-hardware">The Hardware</h3>
+<h4 id="compute">Compute</h4>
+<p>The core of my homelab is a 2-node Proxmox cluster running on 2 AMD Ryzen 7 mini-PC’s each with integrated graphics and 32GB of RAM. This setup allows me to run a bunch of VMs to my heart’s content. My miniPC’s were cheap when I got them so I got 2 to expand capacity and so I could play around with high availability setups.</p>
+<h4 id="storage">Storage</h4>
+<p>I run two Network Attached Storage (NAS). I started with one 2-drive, 4TB NAS but I quickly outgrew it. I got a second NAS with 4, 8TB drives. The big NAS is my main drive, the smaller one is now exclusively for backups.</p>
+<h4 id="networking">Networking</h4>
+<p>I have an older Asus router running Merlin firmware in Access Point (AP). I let the Asus handle just WiFi, and moved the rest of the routing functionality from the router to a VM running Opnsense on one of the nodes (more on this later). I want to move this from a VM to a dedicated piece of hardware but I haven’t been able to justify the purchase yet with the current inflated prices. I have a couple unmanaged switches to connect everything up as well as to some of my IOT appliances and my desktop.</p>
+<h4 id="network-overview">Network Overview</h4>
+<p>While I really want to go crazy with more advanced topologies, my network is currently flat right now; I only have a single segment which all my clients run on (192.168.1.0/24). This works perfectly fine for now but I intend to fix this this summer as soon as I figure out how to have the AP respect VLAN tagging, so I can add VLANs for my robot vacuum and other IOT devices, one for guests, etc.</p>
+<p>Both of my proxmox nodes are dual NIC. The node running opnsense uses both NICs: one for WAN (the incoming internet connection) and one for LAN (the rest of my internal network). I have another VM which runs my other network resources such as Technitium (my DNS), Caddy (Reverse Proxy), and Tailscale (VPN). I group these together because they’re all concerned with how traffic enters and exits the system.</p>
+<p>Here’s how it all fits together (I’ve noted some gaps I’m actively planning to fix): TODO: Add Diagram here
+Hypervisor
+I chose Proxmox as my hypervisor. It has a great community, it’s free, and it allows me to quickly spin up VM’s to experiment with new OS’s and new programs quickly and easily. Having Proxmox run in a cluster makes my setup more resilient. While my current setup can’t run true HA (you need 3+ nodes unless you want to run some corosync on a RPI or something), I can still share management across multiple nodes, and perform live migrations between the two nodes which allow me to make sure most of my services can stay running.</p>
+<p>Using proxmox also lets me heavily leverage infrastructure as code. All my VM’s are defined in their own directory, with a terraform + butane/ignition configuration, ansible playbooks, and whatever other files or configurations it may need. This makes everything not only repeatable but it’s self documenting! Never again will I spin up something and revisit after months or years only to realize I have no idea what I did or how it works.</p>
+<p>I have my setup architected as a bunch of VMs which each run a set of containerized applications. I organized it so each VM runs a set of logically similar services. For example, my “Ingress” VM runs Technitium (my DNS), Caddy (Reverse Proxy), Tailscale (VPN), and Newt (tunnel client for external access); my “media” VM runs jellyfin, my *arr stack, and calibre.
+Why Multiple VMs?
+Why did I choose to architect my system around multiple VMs instead of having one or two big VMs and running everything on them? Or better yet, run everything with K8s or K3s? I mean, the VMs do add some overhead, they each idle at like 300MB memory usage or so when they’re doing nothing so what’s the point? The short answer: like it or not I break stuff pretty often. I’ll often try to do something fancy or new and next thing I know I lose logging, or networking, or kernel panic. Running multiple VMs allows me to take advantage of the most powerful feature of VMs: isolation. I can have some VMs exposed to the internet while keeping others internal; I can experiment on the VM without having to worry it’ll take out the entire system. Having some hard boundaries between my various sandboxes lets me minimize the blast radius of decisions I make, which is a major relief when I’m tinkering with a new OS flag or something. It also makes it easier to manage resources: there’s less risk of starving one service because an adjacent one goes a little rogue. I may one day start experimenting more with k3s, but a lot of the time it adds too much complexity and is overkill for my use cases. Maybe one day I’ll give it a shot. I do write some of my Quadlets as .kube files specifically so I think that migration would be mostly copy-paste when the time comes. I believe my current approach is a decent middleground, giving me isolation where it matters without adding too much excess operational weight. But of course, I didn’t start here. Here’s the less embarrassing version of how I actually got to this setup.
+How did I get here?
+Like most homelabbers, I didn’t start with this perfect architecture. In fact, I barely even started with a plan. I started with what was convenient and on-hand at the time and kept migrating forward whenever something broke down or I found a better way. Here’s my journey.
+The NAS
+My first piece of equipment was the little NAS. I am a big fan of cartoons, and I had a bunch of hard-to-find comfort shows I wanted to make available on my network. Accessing the videos directly from the NAS through VLC or the NAS web interface quickly got old fast. I realized the NAS was more powerful than just a hard drive on the network: it has 8GB of RAM and a quad core processor. Playing around I found out it could run docker so it was obvious: this thing had storage, it had processing power, it was already on the network and always on, why not run some containers on there. For a while, this worked great. Until it didn’t. Running docker containers on my NAS quickly became an absolute masterclass in resource contention. It’d saturate the I/O, the CPU would spike, and suddenly the entire thing would become unresponsive, because some mystery task would run at the most inopportune time and lock everything up. While the NAS’ marketing touted its docker abilities it didn’t seem happy to be running my containers at all. In retrospect the lesson was obvious: storage and compute are two totally different problems, and conflating them means doing both pretty badly.
+My first MiniPC
+I decided to purge the docker containers from the NAS and the world was right again. Suddenly my NFS shares were more reliable, videos played without a hitch. I decided to pick up a cheap mini PC, dump the basic version of Windows it came with, and load it up with Debian. This was a much more familiar situation for me, and I quickly got to work spinning out docker compose files to bring my services back up. This worked, and for a normal person this would have continued working. For me however, the FOMO hit: what else could I do with this? For example, I was taking some online cybersecurity classes which used VMs for the assignments and it sure would be nice to run the VMs natively instead of fighting with Rosetta on my Macbook. Well, if I was going to run multiple VMs for my classes there must be a better way to manage them right?
+Proxmox and LXC
+I went back and forth on a few hypervisors like VMWare vSphere. I was familiar with VMWare but they were in the process of merging with Broadcom and that made it kind of unappealing to me. I decided to try Proxmox: It was free, it offered some pretty advanced features, and there was a huge community from which to learn. Like most people I started with the Proxmox Scripts. This site was awesome (albeit a little unnerving from a security aspect). It allowed me to quickly get various stuff up and running in no time, at a crucial time when it would have been easy to get bogged down and discouraged enough to abandon the whole thing and return back to the safe bosom of Debian. I immediately honed in on LXC’s: they seemed like the perfect complement to the VMs. LXCs are small, lightweight, and seemed like the perfect place to run my services like paperless or jellyfin. Turns out, it’s not ideal. Running LXCs unprivileged and wrestling with cgroups and namespaces is a nightmare, way more frustrating than on a regular machine. The easy fix is to just run everything as privileged which feels like the wrong direction from a security standpoint. Later, when Proxmox released the feature to run LXCs directly from docker images the problem was even worse. I encountered so many weird silent failures where things would report all green in the logs but then nothing would work. I spent more time wrestling with LXCs than actually running my services.
+Proxmox and VMs
+Moving everything to VMs solved all my problems instantly. I ran a VM per service and it was bliss. Everything just works exactly as intended and as expected. But now I had a new problem: every VM was a snowflake and I was stirring up a blizzard. I’d have to SSH into machines to set them up, tweak a config or two, update packages manually, and once everything was happily running I’d forget about it. Then six months later I would have to log in again and I’d have no idea what was on the box, where things were stored, or how anything worked. Worse, if I had a box go down I’d have no way of easily recreating it so I’d have to rebuild it from scratch. There was so much that required documentation and who has time for that? My system was becoming something I had to tend rather than a reliable tool.</p>
+<p>Proxmox, VMs and Podman
+One thing that is great about homelabbing is there’s always something to learn, and I’m voracious in finding new things to learn and new tricks to try. I was getting a little bored and frustrated with Docker. The daemon was getting annoying, and I wanted to move away from the root user but the daemon needs to run as root for anything to work, and it had a habit of getting in the way during upgrades. Then one day I was perusing HackerNews and I saw an article about Podman Quadlets. I almost totally scrolled past it.</p>
+<p>The daemonless architecture caught my eye. No persistent root process, no dumb daemon to babysit? And it offers rootless containers as a feature, not some annoying container configuration? This appealed a lot to my security paranoia. After my LXC experience of “oh just run it privileged” was always the answer, this felt like a much better direction. It was also fully Docker-compatible so I didn’t have to invest anything beyond an “apt-get” to try it. It was uncanny how many boxes it was checking for me so I gave it a shot.</p>
+<p>Then I learned about Quadlets, and that’s when I was fully sold. Quadlets are a Podman feature which let you define your containers as systemd unit files - little declarative text files that describe what you want to run, all its dependencies, and how it should behave. Podman’s systemd plugin picks these files up and manages them just like any other system service. Sure, it sounds like a minor technical convenience but it’s way bigger than that: containers now get the full power of systemd’s dependency graph, restart policies, and centralized logging all for free with no extra tooling beyond what comes built-into linux. So what, right? What does this even mean? It means I can declare a container (like jellyfin for example) must not start until an NFS is available, and systemd will make it so. It means every container logs to the journal alongside every other service in the system. One place, one tool: journalctl. It means that deploying and managing these services with Ansible now becomes trivially simple, because I can just drop these unit files and then reload systemd rather than wrestle with Docker contexts or Compose lifecycle. Quadlets support .container, .pod, and .kube files. The last one is interesting: A .kube quadlet is a Kubernetes manifest which means if I ever want to migrate to k3s the work is already done.
+CoreOS
+With Quadlets solving the container management problem, I started wondering about the OS underneath. If I was going all-in on containerization, why was I still running a general purpose distro with all the baggage that comes with it? That’s when I decided to try Fedora CoreOS: the OG of container-optimized operating systems - and it turned out to be the final piece of the puzzle. CoreOS is immutable. You can’t make ad-hoc changes to the filesystem the way you can on a normal distro. Instead the OS is configured on provision through a tool called Ignition, using a human readable format called Butane. My Terraform provisioning consumes my Butane file and transpiles it to an Ignition file and hands it over to the VM on first boot. The machine materializes already knowing all the users, their SSH keys, NFS mount points, and the automatic update schedule. It’s born fully configured, not configured after the fact. This sounds like a constraint - it is - but it forces good habits. There’s no SSH-ing to tweak something “real quick”, and then forgetting about it a few months later, no mystery configurations. If it’s not in the Butane file or the Ansible playbook, then it’s not on the machine. And if something goes wrong? I don’t fix it, I terraform destroy and reprovision. The whole machine comes back up in minutes, fresh and identical to before. That shift - from fixing broken VMs to provisioning - that’s what made my homelab feel like something I built rather than something I inherited that constantly needed rescue. Less like herding cats, more like running a herd of cattle. It closes the loop on the snowflake problem: every VM is now a first-class, fully-documented, reproducible artifact. The Ansible playbook handles the application layer on top, so the full picture of any given VM lives in a handful of files which read like an instruction manual.</p>
+<p>Every phase taught me something. The NAS phase taught me to separate storage from compute. The LXC phase taught me that lightweight isn&rsquo;t worth it if it means fighting your tooling. The snowflake VM phase taught me that undocumented state is technical debt, even at home. The current setup is a direct response to every one of those lessons - and I&rsquo;m sure the next phase will teach me something the current one doesn&rsquo;t.</p>
+<h2 id="the-services">The Services</h2>
+<p>At this point you might be wondering what I actually run on all this infrastructure. Here&rsquo;s the full roster, organized by VM — because the groupings themselves tell you something about how I think about the architecture.</p>
+<hr>
+<h3 id="ingress">Ingress</h3>
+<p>The Ingress VM is the only one with a foot in both worlds: my internal network and the public internet. These services live together because they&rsquo;re all concerned with the same question: how does traffic get to where it&rsquo;s going, and who decides that?</p>
+<table>
+  <thead>
+      <tr>
+          <th>Service</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Caddy</strong></td>
+          <td>Reverse proxy with automatic TLS via Let&rsquo;s Encrypt. Provides subdomain access to all services over HTTPS.</td>
+      </tr>
+      <tr>
+          <td><strong>Technitium</strong></td>
+          <td>DNS for the whole network. Local hostnames, network-level adblocking.</td>
+      </tr>
+      <tr>
+          <td><strong>Tailscale</strong></td>
+          <td>VPN exit node and route advertiser. Full remote access without opening any firewall ports.</td>
+      </tr>
+      <tr>
+          <td><strong>Newt</strong></td>
+          <td>Outbound tunnel client for Pangolin. More on this in the External Access section.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="auth">Auth</h3>
+<p>Arguably the most critical VM in the whole setup — if this goes down, authentication stops working everywhere. It gets its own post later in this series.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Service</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Authentik</strong></td>
+          <td>OIDC identity provider for every service that supports it. Centralized MFA, session management, and access control in one place.</td>
+      </tr>
+      <tr>
+          <td><strong>Step CA</strong></td>
+          <td>Internal certificate authority. Issues real TLS and SSH certificates across the whole network.</td>
+      </tr>
+      <tr>
+          <td><strong>PostgreSQL</strong></td>
+          <td>Authentik&rsquo;s database.</td>
+      </tr>
+      <tr>
+          <td><strong>Redis</strong></td>
+          <td>Authentik&rsquo;s cache.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="openbao">OpenBao</h3>
+<p>OpenBao gets its own VM, deliberately isolated from everything else. It&rsquo;s a fork of HashiCorp Vault that stayed open source after the licensing drama. Nothing sensitive is hardcoded or sitting in plaintext anywhere in my setup — API keys, database credentials, TLS certificates, all of it lives here. I do a lot with this tool and it gets its own posts later in the series.</p>
+<hr>
+<h3 id="monitoring">Monitoring</h3>
+<p>This VM exists because &ldquo;Hmm, I wonder if that&rsquo;s still running&rdquo; is not a fun question to answer by SSH-ing into boxes. Knowing what&rsquo;s happening across the whole system before something breaks is worth the overhead.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Service</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Grafana</strong></td>
+          <td>Metrics dashboards.</td>
+      </tr>
+      <tr>
+          <td><strong>Loki</strong></td>
+          <td>Log aggregation.</td>
+      </tr>
+      <tr>
+          <td><strong>Uptime Kuma</strong></td>
+          <td>Uptime monitoring and status page.</td>
+      </tr>
+      <tr>
+          <td><strong>Beszel</strong></td>
+          <td>System resource monitoring across every host.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="media">Media</h3>
+<p>The VM that gets the most day-to-day use, and the one most likely to spike CPU or fill local disk with transcode cache. Isolated for exactly that reason.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Service</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Jellyfin</strong></td>
+          <td>Media server. Streaming services kept removing my comfort shows (RIP Swat Kats) so I run my own library now.</td>
+      </tr>
+      <tr>
+          <td><strong>Jellyseerr</strong></td>
+          <td>Media request UI — clean interface for adding content without touching the arr stack directly.</td>
+      </tr>
+      <tr>
+          <td><strong>Radarr / Sonarr</strong></td>
+          <td>Automated movie and TV show management.</td>
+      </tr>
+      <tr>
+          <td><strong>Prowlarr</strong></td>
+          <td>Indexer manager and search proxy for the arr stack.</td>
+      </tr>
+      <tr>
+          <td><strong>SABnzbd</strong></td>
+          <td>Usenet download client.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="paperless">Paperless</h3>
+<p>I live in a tiny apartment — no room for filing cabinets. Paperless-NGX OCRs, indexes, and makes every document in my life fully text-searchable. The moment I could find any document by typing a few words instead of digging through nested folders was the moment I understood why people get unreasonably enthusiastic about this tool. Also notable as my first foray into using <code>.kube</code> files as Quadlets.</p>
+<hr>
+<h3 id="gitea">Gitea</h3>
+<p>My self-hosted Git server. All my Terraform configs, Ansible playbooks, Butane files, and personal projects live here rather than solely on GitHub. The Gitea Actions Runner handles CI — building images, compiling binaries for random tools. Keeping infrastructure code in a repo I control just hits right, given everything I&rsquo;ve said about data ownership.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Service</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Gitea</strong></td>
+          <td>Self-hosted Git server and web UI.</td>
+      </tr>
+      <tr>
+          <td><strong>Gitea Actions Runner</strong></td>
+          <td>CI runner for builds and automation.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="n8n">n8n</h3>
+<p>Workflow automation — like Zapier but self-hosted and significantly more powerful. Started as a thinly-veiled excuse to play with a new tool. Quietly became load-bearing infrastructure.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Service</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>n8n</strong></td>
+          <td>Workflow automation server, worker, and runners.</td>
+      </tr>
+      <tr>
+          <td><strong>PostgreSQL</strong></td>
+          <td>n8n&rsquo;s database.</td>
+      </tr>
+      <tr>
+          <td><strong>Redis</strong></td>
+          <td>n8n&rsquo;s task queue.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="netboot">Netboot</h3>
+<p>Netboot.xyz is a PXE network boot server. Invaluable when provisioning a new VM or adding a node to the cluster. Sits quietly doing nothing most of the time — but when you need it, you really need it.</p>
+<hr>
+<h3 id="utils">Utils</h3>
+<p>My VM for miscellaneous workloads. Currently runs Borg backup jobs for photos and Paperless documents — one containerized job per target, plus supporting containers. Easily the most interesting box in my setup right now, enough so that it&rsquo;s getting its own dedicated post.</p>
+<hr>
+<h3 id="not-yet-migrated">Not Yet Migrated</h3>
+<p>OPNsense, Proxmox Backup Server, Home Assistant, and Immich are still on legacy infrastructure. They work, they&rsquo;re stable, and rushing migrations for the sake of consistency is how you introduce incidents. They&rsquo;ll join the family eventually — OPNsense is moving to dedicated hardware first, which is a natural point to rethink its configuration anyway.
+External Access - Zero Open Firewall Ports!
+All the services I’ve described thus far live safely inside my home network. Sometimes though, I want to reach them from anywhere: Jellyfin from the TV at a friend’s house; Immich when I want to share a photo or album with my family. The naive solution is to forward some ports on the router, clap your hands and call it a day. I’ve never liked that answer. Port forwarding means your home IP is a public target, services are directly reachable, and one poor configuration can mean a very bad day. There is a better way.
+The VPS
+I rent a cheap Debian Linode, like a few dollars a month, which lives on the public internet and does nothing but run Pangolin. The VPS itself is hardened and locked down: Fail2ban, SSH Key only, root login disabled, automatic security updates, the works. It’s a minimal attack surface by design. The less the machine does, the less there is to compromise.
+Pangolin and Newt
+Pangolin is a self-hosted, tunneling reverse proxy. The key word here is tunneling. Rather than my home network accepting inbound connections, my ingress VM runs a Quadlet called Newt which establishes an outbound tunnel to the Pangolin VPS. Pangolin then proxies all incoming traffic back through the tunnel to the appropriate internal service. My home firewall has no inbound rules for any of this. No ports forwarded, no public IP exposed, no direct path from the internet to my home network. The connection is always initiated from inside the house, the VPS is just at the other end of the rope.</p>
+<p>This means that if the VPS is (God forbid) compromised, an attacker gets access only to
+whatever I’ve exposed through Pangolin. They don’t get a foothold into the rest of my network.
+What I Expose
+Not everything gets exposed externally, and the things that are exposed are not all exposed the same way. I run two auth models depending on the service:
+Pangolin auth via Authentik forward auth - Jellyfin sits behind Pangolin’s built-in auth layer which validates sessions by forwarding auth checks to Authentik. A user trying to hit Jellyfin will be intercepted by Pangolin which requires Authentik authentication before allowing the connection to be established. The service will never see an unauthenticated request.
+Native Auth Only - Immich handles its own authentication, no need for Pangolin to get involved. I mean it still proxies the traffic but it doesn’t gate anything. Immich’s own login screen is what users will see.
+Authentik itself - Authentik is technically behind Pangolin but it is also exempt from Pangolin’s auth gating, for the obvious reason that Authentik is the Auth layer. Gating Authentik behind Pangolin would be a great way to lock everyone out permanently. It handles its own login, MFA, and brute force detection.
+Why not just Tailscale?
+Tailscale is also configured on my network, and I use it all the time for personal access. Tailscale requires a client for every one participating in the network, which is totally fine for me but not fine when I want to share a service with friends or family. Pangolin handles the cases where I need something genuinely public-facing without requiring anything from the client. So both tools have their place, solving different problems.
+Security Posture
+To summarize what this setup actually buys me: my home firewall has no inbound rules related to these services. My home IP is not in any DNS record. The only thing publicly reachable is the Linode VPS, which runs a single service, is hardened, and only knows how to forward traffic to specific destinations through an encrypted tunnel. Authentik sits in front of anything worth protecting. The blast radius of a compromised VPS is limited to whatever Pangolin proxies, not my entire system. Is it more complex than just port forwarding? Yes. Is it worth it? Definitely yes.
+What I’d do differently
+No homelab is perfect or ever complete, and mine is certainly no exception. There are things I’d change if I were starting over today, and being honest about them feels more useful than pretending the current setup is the most obvious correct answer.
+OPNsense should have been on dedicated hardware from day one
+Coming out of the gate with the point that bothers me the most. Running OPNsense as a VM on my Proxmox cluster means router and hypervisor share a fate. If the node goes down for any reason I lose internet for my entire network simultaneously. Every service running on the other node is still happily running, but will be unreachable. At the time it was cool and easy to rationalize, but since then it’s only given me anxiety. It isn’t just the homelab that goes down, without OPNsense my whole apartment loses internet access. I should have bought a small appliance at the start instead of taking what I thought was the clever path. Don’t worry though, this is getting fixed, it’s just a matter of finding the right hardware at the right price.
+VLAN should have been planned at the beginning
+I have a robot vacuum, smart TV, smart plugs, smart humidifier even, all on the same flat subnet as my proxmox nodes, my NAS, and my OpenBao. That’s not an ideal situation. IoT devices are notoriously poorly maintained from a security standpoint, often running old firmware, phoning home, are exactly the type of things that are great jump-off points for a network compromise. The correct answer is isolation: IoT on it’s own VLAN, wifi guests on their own VLAN, services on their own VLAN with OPNsense enforcing strict boundaries and inter-VLAN routing. I knew this setting up but I did it anyway because setting up an advanced network topology felt like a project in itself and I was more interested in getting services up and running. It is indeed a project, and one I intend to tackle this summer once I figure out how to get my AP to do it.
+Single DNS is a quiet risk
+Technitium running on a single VM is a gap I think about more than I&rsquo;d like to. DNS is one of those services that feels invisible until it&rsquo;s gone, at which point everything breaks simultaneously and in confusing ways. Every service that uses a hostname, which is all of them, stops resolving. Clustering Technitium across both nodes or maybe a raspberry pi is straightforward in theory and somehow keeps not making it to the top of the priority list. It will. In the meantime I&rsquo;m aware that a bad CoreOS update on the wrong VM is a bad evening.
+RAID 5 made sense at the time
+My primary NAS runs RAID 5, which gives me single drive redundancy across the array. It felt like the right balance between capacity and protection. What I neglected to understand was rebuild behavior: RAID 5 rebuild times on large drives are measured in days, and during a rebuild the array is under a lot of sustained stress which can result in another drive failure right when the NAS is most vulnerable. There&rsquo;s also the URE (Unrecoverable read Error), which during a rebuild would be likely enough to also be a real concern. RAID 6 would give me 2-drive redundancy and survive a second failure during rebuild. A ZFS-based setup would give me checksumming, snapshots, and better resilience. I’m not in immediate danger, but if I were building a NAS today I might rethink this approach.
+The migration debt is real
+OPNsense, Home Assistant, Immich, and Proxmox Backup Server are still running on legacy infrastructure outside the CoreOS + Quadlets setup. They work, which is both the reason they haven&rsquo;t been migrated and a mild source of cognitive dissonance given everything I&rsquo;ve said about reproducibility and IaC. The honest answer is that migrating stable, working services introduces risk and requires time, and other things have been higher priority. They&rsquo;ll get there. But every day they don&rsquo;t is a day those services are managed differently from everything else, with less documentation and less reproducibility than I&rsquo;d like.
+Wrapping Up
+If there’s a theme to everything I’ve described here, it’s this: every good decision in my current setup is a scar from a bad one. The IaC exists because I got burned by snowflakes. The VM isolation exists because I break things constantly. The zero-port forwarding is because I’m too scared of the deep blue internet. Good architecture, at least for me, isn’t something you design from first principles, it’s something you arrive at by solving real world problems as they come, sometimes badly at first then less badly next time.</p>
+<p>The homelab is never done. Right now I’m working on VLAN segmentation, moving OPNsense, and building a mobile app backend for some new ideas. By the time you read this those might be done, which probably means something else will be broken or on fire.</p>
+<p>If you’re just starting your journey, don’t be scared or overwhelmed by my setup. Running everything on a single NAS or mini PC or in a steaming pile of Docker Compose files, that’s not wrong, that’s just the first step on a long road. You’ll hit walls and when you do, hopefully something here will give you a shorter path to the other side.</p>
+<p>Next up: Step CA, what you can do with it, and how I give every service on my network real TLS without a single warning!</p>
+</div>
+    </div>
+
+    
+
+
+
+
+<aside class="social-sharing light-border-top" aria-labelledby="social-sharing-title">
+  <h3 id="social-sharing-title">Share this post</h3>
+  <div class="share-buttons">
+    
+    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F2026-05-16-intro-to-homelab%2F&text=" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Share on Twitter"
+       class="share-button share-twitter">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+      <span>Twitter</span>
+    </a>
+    
+    
+    
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F2026-05-16-intro-to-homelab%2F" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Share on LinkedIn"
+       class="share-button share-linkedin">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+      <span>LinkedIn</span>
+    </a>
+    
+    
+    
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-05-16-intro-to-homelab%2f" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Share on Facebook"
+       class="share-button share-facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      </svg>
+      <span>Facebook</span>
+    </a>
+    
+    
+    
+
+    
+
+    
+    <a href="mailto:?subject=&body=%3ch2%20id%3d%22intro---why-i-do-it%22%3eIntro%20-%20Why%20I%20do%20it%3c%2fh2%3e%0a%3cp%3eThere%20are%20a%20lot%20of%20cloud%20provider%20options%20today%2c%20and%20many%20of%20them%20are%20great.%20Hell%2c%20I%20even%20work%20at%20Amazon%2c%20one%20of%20the%20largest%20of%20them.%20So%20why%20then%20do%20I%20homelab%3f%20For%20me%2c%20there%20are%20many%20reasons%20and%20most%20of%20them%20are%20the%20usual%20suspects%3a%20privacy%2c%20control%20over%20my%20own%20data%2c%20the%20sweet%20satisfaction%20of%20building%20something%20myself.%20The%20thought%20of%20someone%20sneakily%20reading%20my%20personal%20items%2c%20my%20writing%2c%20my%20code%2c%20my%20photos%20and%20training%20an%20AI%20on%20it%20is%20a%20major%20turn%20off%20for%20sure.%20However%2c%20the%20biggest%20reason%20is%20learning%20and%20expanding%20my%20skills.%20My%20homelab%20gives%20me%20a%20playground%20to%20try%20out%20new%20ideas%2c%20new%20technologies%2c%20to%20really%20level%20up%20my%20abilities.%20I%e2%80%99m%20the%20kind%20of%20person%20who%20winds%20down%20from%20my%20job%20in%20big%20tech%20by%20tinkering%20%28or%20essentially%20I%20wind%20down%20from%20a%20long%20day%20of%20coding%20with%20more%20coding%29.%20I%e2%80%99m%20always%20chasing%20problems%20to%20solve%20and%20with%20homelabbing%2c%20there%20is%20certainly%20no%20shortage.%20This%20hobby%20certainly%20isn%e2%80%99t%20for%20everyone%3a%20it%e2%80%99s%20nothing%20but%20delicious%20sidequest%20after%20sidequest.%20You%20can%e2%80%99t%20beat%20the%20ease%20of%20a%20traditional%20cloud%20provider%20like%20AWS%20or%20even%20Digital%20Ocean%20or%20something%20when%20just%20spinning%20up%20simple%20apps%20or%20services.%20But%20since%20you%e2%80%99re%20here%2c%20I%20assume%20you%20have%20let%20your%20curiosity%20get%20the%20better%20of%20you%20and%20you%e2%80%99re%20ready%20to%20venture%20down%20the%20rabbit%20hole%20yourself.%20So%20for%20you%20fellow%20techno-masochists%2c%20I%20am%20writing%20this%20series%20on%20how%20I%20homelab.%20I%e2%80%99ll%20cover%20my%20journey%2c%20my%20setup%2c%20and%20some%20interesting%20projects%20like%20setting%20up%20data%20backups%20using%20dynamic%20credentials%2c%20exposing%20services%20to%20the%20wild%20internet%2c%20and%20orchestrating%20anything%20and%20everything%21%3c%2fp%3e%0A%0Ahttp%3a%2f%2flocalhost%3a1313%2fblog%2f2026-05-16-intro-to-homelab%2f"
+       aria-label="Share via Email"
+       class="share-button share-email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <span>Email</span>
+    </a>
+    
+  </div>
+</aside>
+
+
+
+    
+
+
+
+    <aside class="content-browser light-border-top">
+      Continue reading
+      <div>
+        
+        ■
+        
+      </div>
+    </aside>
+
+    
+
+  </article>
+</section>
+
+    </main>
+
+    <div class="d-print-none">
+        <footer class="footer w-100 d-print-none">
+
+
+    
+
+    
+      
+        
+              
+      
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<section  id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact w-100">
+            <h2>Reach out</h2>
+
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="https://formspree.io/f/moqoerba" method="POST" class="contact__form">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="full_name" class="form-control" placeholder="Your name">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" class="form-control" placeholder="Your e-mail">
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <input type="tel" name="phone" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="message" class="form-control" rows="2" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    
+
+                    
+                    <h3>My mail</h3>
+                    <span>me@gianbiondi.com</span>
+                    
+                    
+                    
+                    <h3>My location</h3>
+                    <span>Newark, NJ USA</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+              
+      
+    
+
+  <div class="container items">
+    <div class="container">
+      <div class="row w-100 align-items-center">
+        <div class="footer_left col-12 col-lg-4 mb-3 mb-lg-0 text-center text-lg-start">
+          <div class="footer__copy">
+            <span>© Gianfranco Biondi 2025</span>
+          </div>
+        </div>
+        <nav class="footer_links col-12 col-lg-6 mb-3 mb-lg-0 text-center text-lg-start" aria-label='Footer navigation'>
+          <ul class="navbar-nav w-100 align-items-center justify-content-center justify-content-lg-start d-flex flex-wrap gap-2">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">ABOUT</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">BLOG</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/#contact">CONTACT</a>
+            </li>
+            
+          </ul>
+        </nav>
+        <div class="footer_right col-12 col-lg-2 mb-3 mb-lg-0 text-center text-lg-end">
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2 d-grid col-12 ">
+            
+            
+            
+<div id='footer-color-selector'
+  class='d-grid gap-2 col-6 mx-auto nav-link dropdown dropup '>
+  <button class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show bd-theme-selector"
+    id='bd-theme-footer' type="button" aria-expanded="false"
+    aria-controls="theme-dropdown-footer" aria-haspopup="true" data-bs-toggle="dropdown"
+    data-bs-display="static" aria-label='Toggle theme'>
+    <span class="theme-icon auto d-none" aria-hidden="true"></span>
+    <span class="current-theme">✨ Auto</span>
+    <span class="d-lg-none ms-2 visually-hidden bd-theme-text" id="bd-theme-text-footer">Toggle theme</span>
+  </button>
+  <ul id="theme-dropdown-footer" class="dropdown-menu dropdown-menu-end " aria-labelledby="bd-theme-text-footer" data-bs-popper="static">
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light"
+        aria-pressed="true">
+        ☀️ Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+        aria-pressed="false">
+        🌑 Dark
+        <span class="theme-icon dark d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+        aria-pressed="false">
+        ✨ Auto
+        <span class="theme-icon light d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+    
+<script>
+  window.addEventListener("load", function() {
+    if (typeof lozad !== 'undefined') {
+      try {
+        var observer = window.lozad(".lozad", {
+          rootMargin: window.innerHeight / 2 + "px 0px",
+          threshold: 0.01,
+          loaded: function(el) {
+            el.setAttribute('data-loaded', 'true');
+          }
+        });
+        observer.observe();
+      } catch(e) {
+        console.error('Lozad initialization error:', e);
+      }
+    }
+  });
+</script>
+
+
+<script defer src='http://localhost:1313/js/rad-animations.js'></script>
+<script defer src='http://localhost:1313/js/library/smooth-scroll.polyfills.min.js'></script>
+<script defer src='http://localhost:1313/js/sticky-header.js'></script>
+<script defer src='http://localhost:1313/js/smooth-scroll-init.js'></script>
+<script defer src='http://localhost:1313/js/copy-code.js'></script>
+<script defer src='http://localhost:1313/js/lightbox.js'></script>
+<script defer src="/assets/js/vendor/bootstrap.bundle.min.e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7.js"></script>
+
+
+
+
+<script>
+  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+</script>
+
+
+    
+    
+</body>
+</html>

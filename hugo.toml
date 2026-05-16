@@ -364,6 +364,7 @@ mobileHeader = false
 ## by default we allow override AND automatic selection
 
 [params.blog]
+listLayout = "cards"
 layout = "default"     # options: default, sidebar
 sidebarWidth = "25"    # percentage width of the sidebar
 showCategories = true
