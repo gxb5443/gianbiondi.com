@@ -1,5 +1,4 @@
 ---
-title: "techcontractor"
 date: 2023-08-09T01:41:53-04:00
 draft: true
 title: "Technology Contractor"

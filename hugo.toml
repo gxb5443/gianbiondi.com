@@ -2,7 +2,20 @@ baseURL = "https://gianbiondi.com/"
 title = "Gianfranco Biondi"
 languageCode = "en"
 
+[params.seo]
+[params.seo.person]
+name = "Gianfranco Biondi"
+url = "https://gianbiondi.com/"
+image = "/img/og-preview.png"
+sameAs = [
+  "https://www.linkedin.com/in/gianfrancobiondi/",
+  "https://github.com/gxb5443",
+]
+
 [module]
+[module.hugoVersion]
+# We use hugo.Deps to list dependencies, which was added in Hugo 0.92.0
+min = "0.92.0"
 [[module.imports]]
 path = "github.com/zetxek/adritian-free-hugo-theme"
 
@@ -45,21 +58,29 @@ target = "assets/js/vendor/bootstrap.bundle.min.js"
 source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
 target = "assets/css/bootstrap-print.css"
 
+## Search & sanitization
+[[module.mounts]]
+source = "node_modules/fuse.js/dist/fuse.min.js"
+target = "static/js/fuse.min.js"
+
+[[module.mounts]]
+source = "node_modules/dompurify/dist/purify.min.js"
+target = "static/js/purify.min.js"
 
 [params]
-title = 'Adritian - a high performance hugo theme by Adrián Moreno'
-description = 'This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications.'
+title = 'Gianfranco Biondi | Engineering Leader'
+description = 'Engineering Leader with over 14 years of experience leading teams and initiatives of all sizesEngineering Leader with over 14 years of experience leading teams and initiatives of all sizes'
 images = ['/img/og-img.png']
-sections = [
-  "showcase",
-  "about",
-  "education",
-  "experience",
-  "client-and-work",
-  "testimonial",
-  "contact",
-  "newsletter",
-]
+#sections = [
+#  "showcase",
+#  "about",
+#  "education",
+#  "experience",
+#  "client-and-work",
+#  "testimonial",
+#  "contact",
+#  "newsletter",
+#]
 # If you want to display an image logo in the header, you can add it here
 # logo = '/img/hugo.svg'
 
@@ -91,6 +112,9 @@ disableIDs = false
 disableTags = false
 enable = true
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 [params.languages.selector.disable]
 footer = false
 header = false
@@ -121,10 +145,10 @@ name = "Experience"
 URL = "#experience"
 weight = 4
 
-#[[languages.en.menus.header]]
-#name = "How to"
-#URL = "/blog"
-#weight = 5
+[[languages.en.menus.header]]
+name = "Blog"
+URL = "/blog"
+weight = 5
 
 [[languages.en.menus.header]]
 name = "Contact"
@@ -140,6 +164,11 @@ weight = 2
 #name = "Portfolio"
 #URL = "#portfolio"
 #weight = 3
+
+[[languages.en.menus.footer]]
+name = "Blog"
+URL = "/blog"
+weight = 3
 
 [[languages.en.menus.footer]]
 name = "Contact"
@@ -265,8 +294,56 @@ URL = "js/library/fontfaceobserver.js"
 [[params.plugins.scss]]
 URL = "scss/adritian.scss"
 
+[menu]
 
-# theme/color style 
+[[menu.header]]
+name = "About"
+url = "index.html#about"
+weight = 2
+
+[[menu.header]]
+name = "Experience"
+url = "index.html#experience-single"
+weight = 3
+
+[[menu.header]]
+name = "Blog"
+url = "/blog"
+weight = 4
+
+[[menu.header]]
+name = "Contact"
+url = "#contact"
+weight = 7
+
+[[menu.footer]]
+name = "💁‍♂️ About"
+url = "index.html#about"
+weight = 2
+
+[[menu.footer]]
+name = "📝 Blog"
+url = "/blog"
+weight = 5
+
+[[menu.footer]]
+name = "📌 Now"
+url = "/now"
+weight = 6
+
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+book_author = "book_authors"
+book_category = "book_categories"
+# Disable theme-inherited taxonomies not used by this site
+topic = ""
+author = ""
+series = ""
+
+
+# theme/color style
 [params.colorTheme]
 
 ## the following configuration would disable automatic theme selection

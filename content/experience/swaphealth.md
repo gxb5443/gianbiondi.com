@@ -1,5 +1,4 @@
 ---
-title: "swaphealth"
 date: 2023-08-24T01:41:53-04:00
 draft: false
 title: "CTO - Swap Health"

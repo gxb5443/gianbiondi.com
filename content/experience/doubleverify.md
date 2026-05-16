@@ -1,5 +1,4 @@
 ---
-title: "doubleverify"
 date: 2023-08-12T01:41:53-04:00
 draft: false
 title: "Network Security Software Engineer"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>Experience on </title>
     <link>http://localhost:1313/experience/</link>
-    <description>Recent content on </description>
+    <description>Recent content in Experience on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Mar 2024 01:41:53 -0400</lastBuildDate>
@@ -49,34 +49,6 @@
       <pubDate>Thu, 10 Aug 2023 01:41:53 -0400</pubDate>
       <guid>http://localhost:1313/experience/namely/</guid>
       <description>&lt;h3 id=&#34;first-start-up-experience&#34;&gt;First Start-up Experience&lt;/h3&gt;&#xA;&lt;p&gt;Namely was a start-up focusing on HR and Payroll.&lt;/p&gt;&#xA;&lt;p&gt;I was hired through a forum for Golang developers.&#xA;I was self-taught in the technology and very excited about it.&#xA;I was hired as their first engineer versed in Golang.&#xA;The plan was to start to build-up and multi-technology team and&#xA;break up our existing Ruby-on-Rails Monolith into Golang and&#xA;Ruby microservices. The first project in this effort was&#xA;building a service which managed our customer database and&#xA;enabled queries for current data as well as historical data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Technology Contractor</title>
-      <link>http://localhost:1313/experience/technology_contractor/</link>
-      <pubDate>Wed, 09 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:1313/experience/technology_contractor/</guid>
-      <description>&lt;h3 id=&#34;technology-contracting&#34;&gt;Technology Contracting&lt;/h3&gt;&#xA;&lt;p&gt;I did a lot of freelance work, mainly to get paid to learn new things. I did a wide variety of projects including a database migration for a municiple library, websites for small businesses, and building web and mobile applications.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Engineering Contractor</title>
-      <link>http://localhost:1313/experience/dod/</link>
-      <pubDate>Tue, 08 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:1313/experience/dod/</guid>
-      <description>&lt;h3 id=&#34;hardware-engineering-with-usaf&#34;&gt;Hardware Engineering with USAF&lt;/h3&gt;&#xA;&lt;p&gt;I worked with the USAF out of a depot in Warner Robins, GA. I got the job through a scholarship program I received while in university.&#xA;Working at this job was exciting and very rewarding. I got some unique experience working with military hardware and software.&#xA;I worked on troubleshooting GPS high precision timing interface, and got build some tooling to communicate with the units.&#xA;I also worked on reverse engineering and upgrading the landing gear sequence control system using VHDL, including testing procedures and other documentation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Engineering Contractor</title>
-      <link>http://localhost:1313/experience/doe/</link>
-      <pubDate>Tue, 08 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:1313/experience/doe/</guid>
-      <description>&lt;h3 id=&#34;working-with-atoms&#34;&gt;Working with atoms&lt;/h3&gt;&#xA;&lt;p&gt;While I was in university, I got a job working with Princeton University at the Plasma Physics Research Lab.&#xA;I worked on a system called the Miniature Integrated Nuclear Detection System (MINDS) which was used heavily&#xA;by the United States Department of Homeland Security and the Department of Energy. This was my first experience&#xA;with artifical intelligence systems. I got to maintain the linux system and C++ program powering the device as well&#xA;as maintaining the scintillator hardware of the detection device. I spent time working with low-level nuclear materials&#xA;for testing and demonstrations.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Software Developer</title>
-      <link>http://localhost:1313/experience/ctd/</link>
-      <pubDate>Tue, 08 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:1313/experience/ctd/</guid>
-      <description>&lt;h3 id=&#34;first-software-job&#34;&gt;First Software Job&lt;/h3&gt;&#xA;&lt;p&gt;My first&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
