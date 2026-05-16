@@ -294,6 +294,10 @@ showRecentPosts = true
 recentPostCount = 5
 listStyle = "summary"  # options: simple, summary
 
-
 [params.experience]
 showJobCard = true # Set to false to hide the job card
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
