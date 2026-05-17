@@ -379,3 +379,8 @@ showJobCard = true # Set to false to hide the job card
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[security]
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']

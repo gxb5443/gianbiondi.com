@@ -1,0 +1,374 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
+
+  .hld {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #1c2333;
+    --border: #30363d;
+    --accent: #58a6ff;
+    --accent2: #3fb950;
+    --accent4: #d2a8ff;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --wan: #f78166;
+    --nfs: #ffa657;
+    --planned: #d2a8ff;
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    padding: 24px;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-sizing: border-box;
+  }
+
+  .hld *, .hld *::before, .hld *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .hld h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .hld .subtitle {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .hld .wrap { max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 0; }
+
+  .hld .layer-label {
+    font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 8px;
+    padding-left: 8px; border-left: 2px solid var(--border); width: 100%;
+  }
+
+  .hld .connector { width: 2px; margin: 0 auto; position: relative; }
+  .hld .connector.wan  { background: var(--wan); height: 32px; }
+  .hld .connector.main { background: var(--accent); height: 28px; }
+  .hld .connector-label {
+    position: absolute; left: 8px; top: 50%; transform: translateY(-50%);
+    font-size: 0.58rem; color: var(--text-muted); white-space: nowrap; letter-spacing: 0.06em;
+  }
+
+  .hld .bus-wrap { width: 100%; padding: 10px 0 6px; position: relative; }
+  .hld .bus {
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent) 6%, var(--accent) 94%, transparent);
+    position: relative;
+  }
+  .hld .bus-label {
+    position: absolute; top: -18px; left: 50%; transform: translateX(-50%);
+    font-size: 0.6rem; color: var(--accent); letter-spacing: 0.08em;
+    text-transform: uppercase; white-space: nowrap;
+  }
+
+  .hld .node {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px; min-width: 120px;
+  }
+  .hld .node.planned { border-style: dashed; border-color: rgba(210,168,255,0.4); opacity: 0.85; }
+  .hld .node-icon  { font-size: 1.1rem; margin-bottom: 5px; display: block; }
+  .hld .node-name  { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.8rem; color: var(--text); margin-bottom: 2px; }
+  .hld .node-sub   { font-size: 0.62rem; color: var(--text-muted); line-height: 1.5; }
+  .hld .node-badge {
+    display: inline-block; font-size: 0.55rem; padding: 1px 6px;
+    border-radius: 3px; margin-top: 5px; font-weight: 600;
+    letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .hld .badge-wan     { background: rgba(247,129,102,0.15); color: var(--wan);     border: 1px solid rgba(247,129,102,0.3); }
+  .hld .badge-nas     { background: rgba(255,166,87,0.12);  color: var(--nfs);     border: 1px solid rgba(255,166,87,0.3); }
+  .hld .badge-ap      { background: rgba(63,185,80,0.12);   color: var(--accent2); border: 1px solid rgba(63,185,80,0.3); }
+  .hld .badge-planned { background: rgba(210,168,255,0.12); color: var(--planned); border: 1px solid rgba(210,168,255,0.3); }
+
+  .hld .bus-drops {
+    display: flex; justify-content: space-around; align-items: flex-start;
+    width: 100%; flex-wrap: wrap; gap: 8px;
+  }
+  .hld .drop { display: flex; flex-direction: column; align-items: center; }
+  .hld .drop-line { width: 2px; height: 20px; }
+  .hld .drop-line.lan { background: var(--accent); }
+
+  .hld .cluster-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px; width: 100%;
+  }
+  .hld .cluster-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .hld .cluster-title    { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--accent); }
+  .hld .cluster-subtitle { font-size: 0.6rem; color: var(--text-muted); margin-left: auto; }
+  .hld .cluster-nodes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .hld .pve-node { background: var(--surface2); border: 1px solid var(--border); border-radius: 7px; padding: 12px; }
+  .hld .pve-node-header {
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.75rem;
+    color: var(--text); margin-bottom: 10px; display: flex; align-items: center; gap: 6px;
+  }
+  .hld .pve-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent2); box-shadow: 0 0 6px var(--accent2); flex-shrink: 0; }
+
+  .hld .vm-list { display: flex; flex-direction: column; gap: 4px; }
+  .hld .vm-item {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 0.65rem; color: var(--text-muted);
+    padding: 4px 6px; border-radius: 4px;
+    background: rgba(255,255,255,0.02); border: 1px solid transparent;
+  }
+  .hld .vm-item:hover { background: rgba(88,166,255,0.05); border-color: rgba(88,166,255,0.15); color: var(--text); }
+  .hld .vm-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+  .hld .dot-coreos { background: var(--accent); }
+  .hld .dot-misc   { background: var(--text-muted); }
+  .hld .dot-opns   { background: var(--wan); }
+  .hld .dot-dns    { background: var(--accent2); }
+
+  .hld .vm-tag {
+    margin-left: auto; font-size: 0.5rem; padding: 1px 4px; border-radius: 2px;
+    background: rgba(88,166,255,0.1); color: var(--accent);
+    border: 1px solid rgba(88,166,255,0.2); white-space: nowrap;
+  }
+  .hld .vm-tag.opns { background: rgba(247,129,102,0.1); color: var(--wan); border-color: rgba(247,129,102,0.2); }
+  .hld .vm-tag.dns  { background: rgba(63,185,80,0.1); color: var(--accent2); border-color: rgba(63,185,80,0.2); }
+  .hld .vm-tag.warn { background: rgba(247,129,102,0.08); color: var(--wan); border-color: rgba(247,129,102,0.15); font-style: italic; }
+  .hld .vm-tag.misc { background: rgba(139,148,158,0.1); color: var(--text-muted); border-color: rgba(139,148,158,0.2); }
+
+  .hld .section-label {
+    font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 10px;
+    padding-left: 8px; border-left: 2px solid var(--nfs); width: 100%;
+  }
+  .hld .storage-row { display: flex; gap: 12px; flex-wrap: wrap; width: 100%; }
+  .hld .storage-card {
+    background: var(--surface); border: 1px solid rgba(255,166,87,0.3);
+    border-radius: 8px; padding: 12px 14px; flex: 1; min-width: 140px;
+  }
+  .hld .storage-card.local { border-color: rgba(88,166,255,0.25); }
+  .hld .storage-card.backup { border-color: rgba(255,166,87,0.18); }
+  .hld .storage-card-title {
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.78rem;
+    margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
+  }
+  .hld .storage-detail { font-size: 0.62rem; color: var(--text-muted); line-height: 1.6; }
+  .hld .storage-detail span { display: block; padding: 2px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .hld .storage-detail span:last-child { border: none; }
+  .hld .storage-hint { font-size: 0.6rem; color: var(--text-muted); margin-top: 8px; padding-left: 4px; width: 100%; }
+
+  .hld .improvements { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+  .hld .imp-label {
+    font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 2px;
+    padding-left: 8px; border-left: 2px solid var(--planned); width: 100%;
+  }
+  .hld .imp-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 8px 12px; background: var(--surface);
+    border-radius: 6px; border: 1px dashed rgba(210,168,255,0.25);
+    font-size: 0.65rem; color: var(--text-muted);
+  }
+  .hld .imp-item strong { color: var(--planned); margin-right: 4px; }
+  .hld .imp-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+
+  .hld .legend {
+    display: flex; gap: 20px; flex-wrap: wrap;
+    padding: 10px 14px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 8px;
+    width: 100%;
+  }
+  .hld .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.62rem; color: var(--text-muted); }
+  .hld .legend-line { width: 24px; height: 2px; }
+  .hld .legend-dash { width: 24px; height: 0; border-top: 2px dashed; }
+
+  .hld .gap { height: 24px; }
+</style>
+
+<div class="hld">
+<div class="wrap">
+
+  <h1>Homelab Network</h1>
+  <p class="subtitle">Current topology · 192.168.1.0/24 · Improvements noted</p>
+
+  <div style="width:100%;">
+    <div class="layer-label">Internet</div>
+    <div style="display:flex;justify-content:center;">
+      <div class="node" style="border-color:rgba(247,129,102,0.4);">
+        <span class="node-icon">🌐</span>
+        <div class="node-name">ISP / WAN</div>
+        <div class="node-sub">Upstream internet</div>
+        <span class="node-badge badge-wan">WAN</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector wan"><span class="connector-label">WAN · Node 1 NIC2</span></div>
+
+  <div style="width:100%;">
+    <div class="layer-label">Edge / Firewall</div>
+    <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+      <div class="node" style="border-color:rgba(247,129,102,0.5);">
+        <span class="node-icon">🔥</span>
+        <div class="node-name">OPNsense</div>
+        <div class="node-sub">VM · Proxmox Node 1<br>Router · Firewall · NAT</div>
+        <span class="node-badge badge-wan">⚠ moving to hw</span>
+      </div>
+      <div class="node planned">
+        <span class="node-icon">🖧</span>
+        <div class="node-name">OPNsense (planned)</div>
+        <div class="node-sub">Dedicated appliance<br>Removes Node 1 SPOF</div>
+        <span class="node-badge badge-planned">Planned</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector main"><span class="connector-label">LAN · 192.168.1.x</span></div>
+
+  <div class="bus-wrap">
+    <div class="bus"><span class="bus-label">LAN · 192.168.1.0/24</span></div>
+  </div>
+
+  <div class="bus-drops">
+
+    <div class="drop">
+      <div class="drop-line lan"></div>
+      <div class="node">
+        <span class="node-icon">📡</span>
+        <div class="node-name">Asus Router</div>
+        <div class="node-sub">AP mode only<br>Wi-Fi clients</div>
+        <span class="node-badge badge-ap">AP Mode</span>
+      </div>
+    </div>
+
+    <div class="drop">
+      <div class="drop-line lan"></div>
+      <div class="node" style="border-color:rgba(255,166,87,0.45);">
+        <span class="node-icon">💾</span>
+        <div class="node-name">Primary NAS</div>
+        <div class="node-sub">NFS exports<br>App data volumes</div>
+        <span class="node-badge badge-nas">NFS · Live</span>
+      </div>
+    </div>
+
+    <div class="drop">
+      <div class="drop-line lan"></div>
+      <div class="node" style="border-color:rgba(255,166,87,0.3);">
+        <span class="node-icon">🗄️</span>
+        <div class="node-name">Backup NAS</div>
+        <div class="node-sub">PostgreSQL backups<br>NAS replication target</div>
+        <span class="node-badge badge-nas">NFS · Backup</span>
+      </div>
+    </div>
+
+    <div class="drop" style="flex:1;min-width:300px;">
+      <div class="drop-line lan"></div>
+      <div class="cluster-card">
+        <div class="cluster-header">
+          <span style="font-size:1rem;">🖥️</span>
+          <span class="cluster-title">Proxmox Cluster</span>
+          <span class="cluster-subtitle">2 nodes · HA</span>
+        </div>
+        <div class="cluster-nodes">
+
+          <div class="pve-node">
+            <div class="pve-node-header"><div class="pve-dot"></div>Node 1</div>
+            <div class="vm-list">
+              <div class="vm-item"><div class="vm-dot dot-opns"></div>OPNsense VM<span class="vm-tag warn">⚠ moving out</span></div>
+              <div class="vm-item"><div class="vm-dot dot-dns"></div>Technitium DNS<span class="vm-tag warn">single ⚠</span></div>
+              <div class="vm-item"><div class="vm-dot dot-coreos"></div>CoreOS — Media<span class="vm-tag">quadlets</span></div>
+              <div class="vm-item"><div class="vm-dot dot-coreos"></div>CoreOS — Security<span class="vm-tag">quadlets</span></div>
+              <div class="vm-item"><div class="vm-dot dot-misc"></div>Experiment VMs<span class="vm-tag misc">misc</span></div>
+            </div>
+          </div>
+
+          <div class="pve-node">
+            <div class="pve-node-header"><div class="pve-dot"></div>Node 2</div>
+            <div class="vm-list">
+              <div class="vm-item"><div class="vm-dot dot-coreos"></div>CoreOS — Home Auto<span class="vm-tag">quadlets</span></div>
+              <div class="vm-item"><div class="vm-dot dot-coreos"></div>CoreOS — Infra<span class="vm-tag">quadlets</span></div>
+              <div class="vm-item"><div class="vm-dot dot-coreos"></div>CoreOS — Docs/Data<span class="vm-tag">quadlets</span></div>
+              <div class="vm-item"><div class="vm-dot dot-misc"></div>Class / Lab VMs<span class="vm-tag misc">misc</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="gap"></div>
+
+  <div class="section-label">Storage Model — Per CoreOS VM</div>
+  <div class="storage-row">
+    <div class="storage-card local">
+      <div class="storage-card-title" style="color:var(--accent);">💽 Local VM Storage</div>
+      <div class="storage-detail">
+        <span>Container images & runtime</span>
+        <span>Container state & config</span>
+        <span>Systemd Quadlet unit files</span>
+        <span>Fedora CoreOS base OS</span>
+      </div>
+    </div>
+    <div class="storage-card">
+      <div class="storage-card-title" style="color:var(--nfs);">🔗 NFS · Primary NAS</div>
+      <div class="storage-detail">
+        <span>Media libraries (Jellyfin)</span>
+        <span>PostgreSQL data volumes</span>
+        <span>Paperless-NGX documents</span>
+        <span>Any persistent app data</span>
+      </div>
+    </div>
+    <div class="storage-card backup">
+      <div class="storage-card-title" style="color:var(--nfs);opacity:0.75;">🗄️ NFS · Backup NAS</div>
+      <div class="storage-detail">
+        <span>PostgreSQL backup target</span>
+        <span>OpenBao-injected creds</span>
+        <span>NAS → NAS replication</span>
+        <span style="color:var(--accent4);font-style:italic;">↳ covered in post 5</span>
+      </div>
+    </div>
+  </div>
+  <div class="storage-hint">
+    systemd mount units enforce dependency ordering —
+    <span style="color:var(--nfs);">mnt-data.mount</span> must succeed before
+    <span style="color:var(--accent);">container-jellyfin.service</span> starts.
+    NFS failure stops the container, not the VM.
+  </div>
+
+  <div class="gap"></div>
+
+  <div class="imp-label">Planned Improvements</div>
+  <div class="improvements">
+    <div class="imp-item">
+      <span class="imp-icon">🖧</span>
+      <div><strong>OPNsense → dedicated hardware.</strong> Currently a VM on Node 1 — any Node 1 maintenance or failure takes down routing for the entire network. Moving to a dedicated appliance eliminates this dependency entirely.</div>
+    </div>
+    <div class="imp-item">
+      <span class="imp-icon">🌐</span>
+      <div><strong>VLAN segmentation.</strong> Currently flat 192.168.1.0/24 — IoT devices, servers, and trusted clients share the same broadcast domain. Planning IoT, Servers, Trusted, and Management VLANs enforced at OPNsense.</div>
+    </div>
+    <div class="imp-item">
+      <span class="imp-icon">🔍</span>
+      <div><strong>Technitium DNS clustering.</strong> Single DNS instance on Node 1 today. Planning to cluster Technitium across both nodes — a DNS failure currently breaks name resolution for every service on the network.</div>
+    </div>
+  </div>
+
+  <div class="gap"></div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-line" style="background:var(--wan);"></div>WAN</div>
+    <div class="legend-item"><div class="legend-line" style="background:var(--accent);"></div>LAN 192.168.1.0/24</div>
+    <div class="legend-item"><div class="legend-line" style="background:var(--nfs);"></div>NFS (data only)</div>
+    <div class="legend-item"><div class="legend-dash" style="border-color:var(--planned);"></div>Planned</div>
+    <div class="legend-item" style="margin-left:auto;">
+      <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:4px;"></div>CoreOS + Quadlets
+    </div>
+    <div class="legend-item"><span style="color:var(--wan);margin-right:4px;">⚠</span>Known gap / SPOF</div>
+  </div>
+
+</div>
+</div>

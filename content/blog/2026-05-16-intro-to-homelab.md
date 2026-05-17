@@ -6,8 +6,8 @@
   tags = ["article", "homelab", "coreos", "podman", "ai"] 
   categories = ["Homelab"] 
   layout = "blog" 
-  images = ["images/blog/vibe_coding_shepherd.png"] 
-  featuredImage = "images/blog/vibe_coding_shepherd.png" 
+  images = ["images/blog/homelab_title_cover.png"] 
+  featuredImage = "images/blog/homelab_title_cover.png" 
 +++
 
 ## Intro - Why I do it
@@ -30,6 +30,7 @@ While I really want to go crazy with more advanced topologies, my network is cur
 Both of my proxmox nodes are dual NIC. The node running opnsense uses both NICs: one for WAN (the incoming internet connection) and one for LAN (the rest of my internal network). I have another VM which runs my other network resources such as Technitium (my DNS), Caddy (Reverse Proxy), and Tailscale (VPN). I group these together because they’re all concerned with how traffic enters and exits the system.
 
 Here’s how it all fits together (I’ve noted some gaps I’m actively planning to fix): TODO: Add Diagram here
+{{< embed file="homelab-diagram.html" >}}
 
 ## Hypervisor
 I chose Proxmox as my hypervisor. It has a great community, it’s free, and it allows me to quickly spin up VM’s to experiment with new OS’s and new programs quickly and easily. Having Proxmox run in a cluster makes my setup more resilient. While my current setup can’t run true HA (you need 3+ nodes unless you want to run some corosync on a RPI or something), I can still share management across multiple nodes, and perform live migrations between the two nodes which allow me to make sure most of my services can stay running. 
@@ -69,6 +70,12 @@ One thing that is great about homelabbing is there’s always something to learn
 The daemonless architecture caught my eye. No persistent root process, no dumb daemon to babysit? And it offers rootless containers as a feature, not some annoying container configuration? This appealed a lot to my security paranoia. After my LXC experience of “oh just run it privileged” was always the answer, this felt like a much better direction. It was also fully Docker-compatible so I didn’t have to invest anything beyond an “apt-get” to try it. It was uncanny how many boxes it was checking for me so I gave it a shot.
 
 Then I learned about Quadlets, and that’s when I was fully sold. Quadlets are a Podman feature which let you define your containers as systemd unit files - little declarative text files that describe what you want to run, all its dependencies, and how it should behave. Podman’s systemd plugin picks these files up and manages them just like any other system service. Sure, it sounds like a minor technical convenience but it’s way bigger than that: containers now get the full power of systemd’s dependency graph, restart policies, and centralized logging all for free with no extra tooling beyond what comes built-into linux. So what, right? What does this even mean? It means I can declare a container (like jellyfin for example) must not start until an NFS is available, and systemd will make it so. It means every container logs to the journal alongside every other service in the system. One place, one tool: journalctl. It means that deploying and managing these services with Ansible now becomes trivially simple, because I can just drop these unit files and then reload systemd rather than wrestle with Docker contexts or Compose lifecycle. Quadlets support .container, .pod, and .kube files. The last one is interesting: A .kube quadlet is a Kubernetes manifest which means if I ever want to migrate to k3s the work is already done.
+
+And here's an example of a quadlet with my actual `caddy.container` file:
+{{< gist user="gxb5443" id="f22851bd38338148b7892b301bbc058b" >}}
+
+And here's an example of a systemd mount file:
+{{< gist user="gxb5443" id="d88c7f157b75cea0bdbaeb97a8d43931" >}}
 
 ### CoreOS
 
@@ -240,4 +247,3 @@ The homelab is never done. Right now I’m working on VLAN segmentation, moving 
 If you’re just starting your journey, don’t be scared or overwhelmed by my setup. Running everything on a single NAS or mini PC or in a steaming pile of Docker Compose files, that’s not wrong, that’s just the first step on a long road. You’ll hit walls and when you do, hopefully something here will give you a shorter path to the other side.
 
 **Next up**: Step CA, what you can do with it, and how I give every service on my network real TLS without a single warning!
-

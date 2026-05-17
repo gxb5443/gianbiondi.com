@@ -1,0 +1,4 @@
+{{- $file := .Get "file" -}}
+{{- $path := printf "html-blocks/%s" $file -}}
+{{- $content := readFile $path -}}
+{{- $content | safeHTML -}}
