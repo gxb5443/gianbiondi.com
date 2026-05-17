@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on </title>
-    <link>http://localhost:1313/tags/tutorial/</link>
+    <link>http://localhost:55310/tags/tutorial/</link>
     <description>Recent content in Tutorial on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55310/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Article</title>
-      <link>http://localhost:1313/articles/first-article/</link>
+      <link>http://localhost:55310/articles/first-article/</link>
       <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/first-article/</guid>
+      <guid>http://localhost:55310/articles/first-article/</guid>
       <description>&lt;p&gt;This is the first article content. Hugo sections allow you to organize content into logical groups, and each section gets its own URL path.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-hugo-sections&#34;&gt;What are Hugo Sections?&lt;/h2&gt;&#xA;&lt;p&gt;Hugo sections are a way to organize your content into logical groups. When you create a folder under &lt;code&gt;content/&lt;/code&gt;, Hugo automatically treats it as a section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;benefits-of-using-sections&#34;&gt;Benefits of Using Sections&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Organization&lt;/strong&gt;: Keep related content together&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;URLs&lt;/strong&gt;: Automatic URL structure (&lt;code&gt;/articles/&lt;/code&gt;, &lt;code&gt;/news/&lt;/code&gt;, etc.)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Templates&lt;/strong&gt;: Custom layouts for different content types&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;RSS&lt;/strong&gt;: Each section gets its own RSS feed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example-structure&#34;&gt;Example Structure&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight-wrapper&#34;&gt;&#xA;  &lt;button class=&#34;copy-code-btn&#34; type=&#34;button&#34; aria-label=&#34;Copy code to clipboard&#34;&gt;&#xA;    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; aria-hidden=&#34;true&#34;&gt;&#xA;      &lt;rect x=&#34;9&#34; y=&#34;9&#34; width=&#34;13&#34; height=&#34;13&#34; rx=&#34;2&#34; ry=&#34;2&#34;&gt;&lt;/rect&gt;&#xA;      &lt;path d=&#34;M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1&#34;&gt;&lt;/path&gt;&#xA;    &lt;/svg&gt;&#xA;    &lt;span class=&#34;copy-text&#34;&gt;Copy&lt;/span&gt;&#xA;  &lt;/button&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;content/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── articles/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── _index.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── first-article.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── second-article.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└── news/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── _index.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └── breaking-news.md&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;This creates accessible URLs like:&lt;/p&gt;</description>
     </item>
   </channel>

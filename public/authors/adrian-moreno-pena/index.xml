@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adrián Moreno Peña on </title>
-    <link>http://localhost:1313/authors/adrian-moreno-pena/</link>
+    <link>http://localhost:55310/authors/adrian-moreno-pena/</link>
     <description>Recent content in Adrián Moreno Peña on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/authors/adrian-moreno-pena/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55310/authors/adrian-moreno-pena/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
