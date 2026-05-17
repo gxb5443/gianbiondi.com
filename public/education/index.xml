@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Educations on </title>
-    <link>http://localhost:55310/education/</link>
+    <link>http://localhost:1313/education/</link>
     <description>Recent content in Educations on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:55310/education/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Georgia Institute of Technology</title>
-      <link>http://localhost:55310/education/gatech/</link>
+      <link>http://localhost:1313/education/gatech/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55310/education/gatech/</guid>
+      <guid>http://localhost:1313/education/gatech/</guid>
       <description></description>
     </item>
     <item>
       <title>Rochester Institute of Technology</title>
-      <link>http://localhost:55310/education/rit/</link>
+      <link>http://localhost:1313/education/rit/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55310/education/rit/</guid>
+      <guid>http://localhost:1313/education/rit/</guid>
       <description></description>
     </item>
   </channel>

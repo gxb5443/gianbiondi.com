@@ -3,7 +3,7 @@
   slug = "my-homelab-stack-proxmox-coreos-and-podman-quadlets"
   date = "2026-05-15T00:00:00-05:00" 
   draft = false 
-  tags = ["article", "homelab", "coreos", "podman", "ai"] 
+  tags = ["article", "homelab", "coreos", "podman"] 
   categories = ["Homelab"] 
   layout = "blog" 
   images = ["images/blog/homelab_title_cover.png"] 

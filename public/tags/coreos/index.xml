@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coreos on </title>
-    <link>http://localhost:55310/tags/coreos/</link>
+    <link>http://localhost:1313/tags/coreos/</link>
     <description>Recent content in Coreos on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 May 2026 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:55310/tags/coreos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/coreos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Homelab Stack: Proxmox, CoreOS, and Podman Quadlets</title>
-      <link>http://localhost:55310/blog/my-homelab-stack-proxmox-coreos-and-podman-quadlets/</link>
+      <link>http://localhost:1313/blog/my-homelab-stack-proxmox-coreos-and-podman-quadlets/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:55310/blog/my-homelab-stack-proxmox-coreos-and-podman-quadlets/</guid>
+      <guid>http://localhost:1313/blog/my-homelab-stack-proxmox-coreos-and-podman-quadlets/</guid>
       <description>&lt;h2 id=&#34;intro---why-i-do-it&#34;&gt;Intro - Why I do it&lt;/h2&gt;&#xA;&lt;p&gt;There are a lot of cloud provider options today, and many of them are great. Hell, I even work at Amazon, one of the largest of them. So why then do I homelab? For me, there are many reasons and most of them are the usual suspects: privacy, control over my own data, the sweet satisfaction of building something myself. The thought of someone sneakily reading my personal items, my writing, my code, my photos and training an AI on it is a major turn off for sure. However, the biggest reason is learning and expanding my skills. My homelab gives me a playground to try out new ideas, new technologies, to really level up my abilities. I’m the kind of person who winds down from my job in big tech by tinkering (or essentially I wind down from a long day of coding with more coding). I’m always chasing problems to solve and with homelabbing, there is certainly no shortage. This hobby certainly isn’t for everyone: it’s nothing but delicious sidequest after sidequest. You can’t beat the ease of a traditional cloud provider like AWS or even Digital Ocean or something when just spinning up simple apps or services. But since you’re here, I assume you have let your curiosity get the better of you and you’re ready to venture down the rabbit hole yourself. So for you fellow techno-masochists, I am writing this series on how I homelab. I’ll cover my journey, my setup, and some interesting projects like setting up data backups using dynamic credentials, exposing services to the wild internet, and orchestrating anything and everything!&lt;/p&gt;</description>
     </item>
   </channel>

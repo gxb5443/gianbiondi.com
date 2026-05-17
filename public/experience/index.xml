@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Experience on </title>
-    <link>http://localhost:55310/experience/</link>
+    <link>http://localhost:1313/experience/</link>
     <description>Recent content in Experience on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Feb 2026 01:41:53 -0400</lastBuildDate>
-    <atom:link href="http://localhost:55310/experience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SDE III - Audible</title>
-      <link>http://localhost:55310/experience/audible_sdeiii/</link>
+      <link>http://localhost:1313/experience/audible_sdeiii/</link>
       <pubDate>Mon, 09 Feb 2026 01:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/audible_sdeiii/</guid>
+      <guid>http://localhost:1313/experience/audible_sdeiii/</guid>
       <description>&lt;h3 id=&#34;sde-iii&#34;&gt;SDE III&lt;/h3&gt;&#xA;&lt;p&gt;Audible is the world&amp;rsquo;s largest producer and provider of audiobooks and audio entertainment, reaching millions of listeners globally as an Amazon company.&lt;/p&gt;&#xA;&lt;p&gt;I joined Audible&amp;rsquo;s Consumer Domains org as an SDE III, where I work on the credits system, the core mechanism that powers Audible&amp;rsquo;s membership model and allows members to acquire titles. The credits system sits at the heart of how customers interact with Audible&amp;rsquo;s catalog, making it one of the most critical and high-traffic domains in the consumer experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Principal Engineer - Walmart Pharmacy &amp; Vision</title>
-      <link>http://localhost:55310/experience/walmartglobaltech_hw_principal_eng/</link>
+      <link>http://localhost:1313/experience/walmartglobaltech_hw_principal_eng/</link>
       <pubDate>Mon, 04 Mar 2024 01:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/walmartglobaltech_hw_principal_eng/</guid>
+      <guid>http://localhost:1313/experience/walmartglobaltech_hw_principal_eng/</guid>
       <description>&lt;h3 id=&#34;principal-engineer&#34;&gt;Principal Engineer&lt;/h3&gt;&#xA;&lt;p&gt;Walmart is one of the largest retailers in the United States and the world.&lt;/p&gt;&#xA;&lt;p&gt;After leaving Swap Health, I decided to take some time to figure out what to do next.&#xA;I remembered fondly my time with Walmart in the past and decided to apply. I wanted to&#xA;leverage my experience in health care and continue to help people. Walmart hired me&#xA;in their Pharamacy and Vision department as a Principal Engineer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CTO - Swap Health</title>
-      <link>http://localhost:55310/experience/swaphealth/</link>
+      <link>http://localhost:1313/experience/swaphealth/</link>
       <pubDate>Thu, 24 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/swaphealth/</guid>
+      <guid>http://localhost:1313/experience/swaphealth/</guid>
       <description>&lt;h3 id=&#34;co-founder-and-cto&#34;&gt;Co-Founder and CTO&lt;/h3&gt;&#xA;&lt;p&gt;My former boss from my DoubleVerify days, a serious and serial entrepreneur, reached out to me during the spring of 2021 with a question: what if we could help people make better choices while grocery shopping? I thought the idea was really interesting, we could apply a lot of the advertising techniques and technology towards helping people get healthier. Over the next week I built out a prototype chrome extension that could analyze products and make recommendations for people shopping for groceries online. And just like that I co-founded a Health Tech startup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Staff Engineer - Walmart Labs</title>
-      <link>http://localhost:55310/experience/walmartlabs_staff_eng/</link>
+      <link>http://localhost:1313/experience/walmartlabs_staff_eng/</link>
       <pubDate>Wed, 23 Aug 2023 02:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/walmartlabs_staff_eng/</guid>
+      <guid>http://localhost:1313/experience/walmartlabs_staff_eng/</guid>
       <description>&lt;h3 id=&#34;staff-engineer-and-fortune-1-company&#34;&gt;Staff Engineer and Fortune 1 Company&lt;/h3&gt;&#xA;&lt;p&gt;Walmart is one of the largest retailers in the United States and the world.&lt;/p&gt;&#xA;&lt;p&gt;When Walmart fully absorbed Jet.com, my team from Jet was merged with another team working for Walmart Labs proper. We brought much of our experience with our A/B testing platform to the Walmart-developed tool. We brought A/B testing to all of Walmart, including in-store operations. Together we built a single, performant platform that supported a growing culture of testing and optimization at Walmart. I also led efforts to upgrade our internal telemetry system to use &lt;a href=&#34;https://opentelemetry.io/&#34;&gt;OpenTelemetry&lt;/a&gt;. I also led experiments and research into improving user experience through new integrations and work flows (e.g. GitOps-based experiments) and in upgrading our platform to a next-generation architecture built on edge-computing via Web Assembly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Senior Engineer - Jet.com</title>
-      <link>http://localhost:55310/experience/jet_senior_eng/</link>
+      <link>http://localhost:1313/experience/jet_senior_eng/</link>
       <pubDate>Wed, 23 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/jet_senior_eng/</guid>
+      <guid>http://localhost:1313/experience/jet_senior_eng/</guid>
       <description>&lt;h3 id=&#34;senior-engineer-and-technical-lead&#34;&gt;Senior Engineer and Technical Lead&lt;/h3&gt;&#xA;&lt;p&gt;I was hired originally at Jet.com as a Senior Engineer. Walmart acquired Jet shortly before I was hired. I worked on our internally-developed A/B testing platform. The platform was built directly into the network infrastructure of Jet, injecting metadata and dynamically updating routing for every request. The tech stack we used was React, Node, Golang, and Lua. I quickly rose through the ranks to the team&amp;rsquo;s technical lead and was promoted to Staff Engineer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Security Software Engineer</title>
-      <link>http://localhost:55310/experience/doubleverify/</link>
+      <link>http://localhost:1313/experience/doubleverify/</link>
       <pubDate>Sat, 12 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/doubleverify/</guid>
+      <guid>http://localhost:1313/experience/doubleverify/</guid>
       <description>&lt;h3 id=&#34;leading-research-and-learning-scale&#34;&gt;Leading Research and Learning Scale&lt;/h3&gt;&#xA;&lt;p&gt;DoubleVerify is a software company which produces tools for advertisers, marketplaces, and publishers to better understand how their ad&amp;rsquo;s performance. DoubleVerify focused on detecting and preventing fraud, measuring &amp;ldquo;viewability&amp;rdquo;, and ensuring brand-safety.&lt;/p&gt;&#xA;&lt;p&gt;I was the first engineering hire for a special research project to build a product to help publishers and work with ad-blockers to ensure well-behaved ads could be shown to users.&lt;/p&gt;&#xA;&lt;p&gt;After that project, I joined the team that worked on integration with marketplaces. When an advertiser is using a marketplace they engage in high-speed bidding that occurs within 10&amp;rsquo;s of milliseconds. In that time DoubleVerify must provide analysis to the bidding agents so they can better assess the quality of an ad space and bid more effectively. Through this I got my first real experience with truely &amp;ldquo;Big Data&amp;rdquo;. We used Kafka to process impressions from social media sources and move them into our data lake for analysis and exploration. I gained a ton of SQL experience, upgrading and maintaining legacy systems which required huge and complex ETL processes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software Engineer</title>
-      <link>http://localhost:55310/experience/namely/</link>
+      <link>http://localhost:1313/experience/namely/</link>
       <pubDate>Thu, 10 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:55310/experience/namely/</guid>
+      <guid>http://localhost:1313/experience/namely/</guid>
       <description>&lt;h3 id=&#34;first-start-up-experience&#34;&gt;First Start-up Experience&lt;/h3&gt;&#xA;&lt;p&gt;Namely was a start-up focusing on HR and Payroll.&lt;/p&gt;&#xA;&lt;p&gt;I was hired through a forum for Golang developers.&#xA;I was self-taught in the technology and very excited about it.&#xA;I was hired as their first engineer versed in Golang.&#xA;The plan was to start to build-up and multi-technology team and&#xA;break up our existing Ruby-on-Rails Monolith into Golang and&#xA;Ruby microservices. The first project in this effort was&#xA;building a service which managed our customer database and&#xA;enabled queries for current data as well as historical data.&lt;/p&gt;</description>
     </item>
   </channel>
