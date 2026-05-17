@@ -38,6 +38,12 @@
     <loc>http://localhost:1313/showcase/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/experience/</loc>
+    <lastmod>2026-02-09T01:41:53-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/experience/audible_sdeiii/</loc>
+    <lastmod>2026-02-09T01:41:53-04:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/skills/</loc>
     <lastmod>2025-05-19T14:56:00+01:00</lastmod>
   </url><url>
@@ -85,9 +91,6 @@
   </url><url>
     <loc>http://localhost:1313/projects/swiss-fintech/</loc>
     <lastmod>2024-08-25T09:53:42+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/experience/</loc>
-    <lastmod>2024-03-04T01:41:53-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/experience/walmartglobaltech_hw_principal_eng/</loc>
     <lastmod>2024-03-04T01:41:53-04:00</lastmod>
@@ -146,10 +149,10 @@
     <loc>http://localhost:1313/experience/swaphealth/</loc>
     <lastmod>2023-08-24T01:41:53-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/experience/jet_senior_eng/</loc>
-    <lastmod>2023-08-23T01:41:53-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/experience/walmartlabs_staff_eng/</loc>
+    <lastmod>2023-08-23T02:41:53-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/experience/jet_senior_eng/</loc>
     <lastmod>2023-08-23T01:41:53-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/experience/doubleverify/</loc>

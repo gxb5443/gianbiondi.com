@@ -23,6 +23,13 @@
       <description>&lt;p&gt;These are real websites built by the community using the Adritian Hugo theme.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Is your site missing?&lt;/strong&gt; &lt;a href=&#34;https://github.com/zetxek/adritian-free-hugo-theme/issues/new?template=showcase-submission.md&#34;&gt;Submit it via GitHub&lt;/a&gt; — we&amp;rsquo;d love to feature it here!&lt;/p&gt;</description>
     </item>
     <item>
+      <title>SDE III - Audible</title>
+      <link>http://localhost:1313/experience/audible_sdeiii/</link>
+      <pubDate>Mon, 09 Feb 2026 01:41:53 -0400</pubDate>
+      <guid>http://localhost:1313/experience/audible_sdeiii/</guid>
+      <description>&lt;h3 id=&#34;sde-iii&#34;&gt;SDE III&lt;/h3&gt;&#xA;&lt;p&gt;Audible is the world&amp;rsquo;s largest producer and provider of audiobooks and audio entertainment, reaching millions of listeners globally as an Amazon company.&lt;/p&gt;&#xA;&lt;p&gt;I joined Audible&amp;rsquo;s Consumer Domains org as an SDE III, where I work on the credits system, the core mechanism that powers Audible&amp;rsquo;s membership model and allows members to acquire titles. The credits system sits at the heart of how customers interact with Audible&amp;rsquo;s catalog, making it one of the most critical and high-traffic domains in the consumer experience.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Graziella Nutella</title>
       <link>http://localhost:1313/testimonial/graziella-nutella/</link>
       <pubDate>Mon, 25 Nov 2024 21:53:18 +0100</pubDate>
@@ -163,18 +170,18 @@
       <description>&lt;h3 id=&#34;co-founder-and-cto&#34;&gt;Co-Founder and CTO&lt;/h3&gt;&#xA;&lt;p&gt;My former boss from my DoubleVerify days, a serious and serial entrepreneur, reached out to me during the spring of 2021 with a question: what if we could help people make better choices while grocery shopping? I thought the idea was really interesting, we could apply a lot of the advertising techniques and technology towards helping people get healthier. Over the next week I built out a prototype chrome extension that could analyze products and make recommendations for people shopping for groceries online. And just like that I co-founded a Health Tech startup.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Staff Engineer - Walmart Labs</title>
+      <link>http://localhost:1313/experience/walmartlabs_staff_eng/</link>
+      <pubDate>Wed, 23 Aug 2023 02:41:53 -0400</pubDate>
+      <guid>http://localhost:1313/experience/walmartlabs_staff_eng/</guid>
+      <description>&lt;h3 id=&#34;staff-engineer-and-fortune-1-company&#34;&gt;Staff Engineer and Fortune 1 Company&lt;/h3&gt;&#xA;&lt;p&gt;Walmart is one of the largest retailers in the United States and the world.&lt;/p&gt;&#xA;&lt;p&gt;When Walmart fully absorbed Jet.com, my team from Jet was merged with another team working for Walmart Labs proper. We brought much of our experience with our A/B testing platform to the Walmart-developed tool. We brought A/B testing to all of Walmart, including in-store operations. Together we built a single, performant platform that supported a growing culture of testing and optimization at Walmart. I also led efforts to upgrade our internal telemetry system to use &lt;a href=&#34;https://opentelemetry.io/&#34;&gt;OpenTelemetry&lt;/a&gt;. I also led experiments and research into improving user experience through new integrations and work flows (e.g. GitOps-based experiments) and in upgrading our platform to a next-generation architecture built on edge-computing via Web Assembly.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Senior Engineer - Jet.com</title>
       <link>http://localhost:1313/experience/jet_senior_eng/</link>
       <pubDate>Wed, 23 Aug 2023 01:41:53 -0400</pubDate>
       <guid>http://localhost:1313/experience/jet_senior_eng/</guid>
       <description>&lt;h3 id=&#34;senior-engineer-and-technical-lead&#34;&gt;Senior Engineer and Technical Lead&lt;/h3&gt;&#xA;&lt;p&gt;I was hired originally at Jet.com as a Senior Engineer. Walmart acquired Jet shortly before I was hired. I worked on our internally-developed A/B testing platform. The platform was built directly into the network infrastructure of Jet, injecting metadata and dynamically updating routing for every request. The tech stack we used was React, Node, Golang, and Lua. I quickly rose through the ranks to the team&amp;rsquo;s technical lead and was promoted to Staff Engineer.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Staff Engineer - Walmart Labs</title>
-      <link>http://localhost:1313/experience/walmartlabs_staff_eng/</link>
-      <pubDate>Wed, 23 Aug 2023 01:41:53 -0400</pubDate>
-      <guid>http://localhost:1313/experience/walmartlabs_staff_eng/</guid>
-      <description>&lt;h3 id=&#34;staff-engineer-and-fortune-1-company&#34;&gt;Staff Engineer and Fortune 1 Company&lt;/h3&gt;&#xA;&lt;p&gt;Walmart is one of the largest retailers in the United States and the world.&lt;/p&gt;&#xA;&lt;p&gt;When Walmart fully absorbed Jet.com, my team from Jet was merged with another team working for Walmart Labs proper. We brought much of our experience with our A/B testing platform to the Walmart-developed tool. We brought A/B testing to all of Walmart, including in-store operations. Together we built a single, performant platform that supported a growing culture of testing and optimization at Walmart. I also led efforts to upgrade our internal telemetry system to use &lt;a href=&#34;https://opentelemetry.io/&#34;&gt;OpenTelemetry&lt;/a&gt;. I also led experiments and research into improving user experience through new integrations and work flows (e.g. GitOps-based experiments) and in upgrading our platform to a next-generation architecture built on edge-computing via Web Assembly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Security Software Engineer</title>

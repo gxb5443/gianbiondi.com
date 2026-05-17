@@ -5,7 +5,7 @@ title: "Principal Engineer - Walmart Pharmacy & Vision"
 jobTitle: "Principal Engineer"
 company: "Walmart Global Tech - Health and Wellness"
 location: "Hoboken, New Jersey"
-duration: "March 2024 – Present"
+duration: "March 2024 – February 2026"
 companyLogo: "images/experience/walmart.webp"
 ---
 
@@ -18,8 +18,15 @@ I remembered fondly my time with Walmart in the past and decided to apply. I wan
 leverage my experience in health care and continue to help people. Walmart hired me
 in their Pharamacy and Vision department as a Principal Engineer.
 
-My role as a Principal engineer has me working on all sorts of projects. I am currently
-helping the team modernize our existing systems, as well as helping break into new lines
-of business. I evaluate designs for effectiveness, performance, cost, and maintainability.
-All the while I'm mentoring more junior engineers and promoting engineering excellence
-across our entire pillar.
+My role as a Principal engineer had me working on all sorts of projects. My biggest project
+at Walmart was modernizing the in-store pharmacy systems. Together, we converted over 100
+legacy C code programs into Go code in addition to migrating over 1K other legacy programs
+and scripts to modern, maintainable code that will serve as the foundation for future of pharmacy
+systems. I also worked on design and implementation of the next-generation pharmacy applications such as
+the core workflow engine and the "Test and Treat" applications.
+
+In addition to my technical work, I also developed process improvements, set up new tools and infrastructure, helped make
+Go a first-class language for all of Global Tech, and provided mentoring and guidance to junior engineers.
+
+Unfortunately, my time at Walmart ended in 2026. They asked all the engineers in the Hoboken office to relocate
+to the HQ in Bentonville, Arkansas. I was unable to relocate and thus I left and found a new job here at home.
