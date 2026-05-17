@@ -1,6 +1,5 @@
 baseURL = "https://gianbiondi.com/"
 title = "Gianfranco Biondi"
-languageCode = "en"
 
 [params.seo]
 [params.seo.person]
@@ -123,7 +122,6 @@ mobileHeader = false
 [languages]
 [languages.en]
 disabled = false
-languageCode = 'en'
 languageDirection = 'ltr'
 languageName = 'English'
 title = ''
@@ -178,7 +176,6 @@ weight = 4
 
 [languages.es]
 disabled = true
-languageCode = 'es'
 languageDirection = 'ltr'
 languageName = 'Español'
 title = ''
@@ -224,7 +221,6 @@ weight = 4
 
 [languages.fr]
 disabled = true
-languageCode = 'fr'
 languageDirection = 'ltr'
 languageName = 'Français'
 title = ''
