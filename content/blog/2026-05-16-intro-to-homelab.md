@@ -148,13 +148,13 @@ The VM that gets the most day-to-day use, and the one most likely to spike CPU o
 
 ### Paperless
 
-I live in a tiny apartment — no room for filing cabinets. Paperless-NGX OCRs, indexes, and makes every document in my life fully text-searchable. The moment I could find any document by typing a few words instead of digging through nested folders was the moment I understood why people get unreasonably enthusiastic about this tool. Also notable as my first foray into using `.kube` files as Quadlets.
+I live in a tiny apartment, so no room for filing cabinets. Paperless-NGX OCRs, indexes, and makes every document in my life fully text-searchable. The moment I could find any document by typing a few words instead of digging through nested folders was the moment I understood why people get unreasonably enthusiastic about this tool. Also notable as my first foray into using `.kube` files as Quadlets.
 
 ---
 
 ### Gitea
 
-My self-hosted Git server. All my Terraform configs, Ansible playbooks, Butane files, and personal projects live here rather than solely on GitHub. The Gitea Actions Runner handles CI — building images, compiling binaries for random tools. Keeping infrastructure code in a repo I control just hits right, given everything I've said about data ownership.
+My self-hosted Git server. All my Terraform configs, Ansible playbooks, Butane files, and personal projects live here rather than solely on GitHub. The Gitea Actions Runner handles CI: building images, compiling binaries for random tools. Keeping infrastructure code in a repo I control just hits right, given everything I've said about data ownership.
 
 | Service | What it does |
 |---|---|
@@ -177,19 +177,19 @@ Workflow automation — like Zapier but self-hosted and significantly more power
 
 ### Netboot
 
-Netboot.xyz is a PXE network boot server. Invaluable when provisioning a new VM or adding a node to the cluster. Sits quietly doing nothing most of the time — but when you need it, you really need it.
+Netboot.xyz is a PXE network boot server. Invaluable when provisioning a new VM or adding a node to the cluster. Sits quietly doing nothing most of the time, but when you need it, it's really nice to have.
 
 ---
 
 ### Utils
 
-My VM for miscellaneous workloads. Currently runs Borg backup jobs for photos and Paperless documents — one containerized job per target, plus supporting containers. Easily the most interesting box in my setup right now, enough so that it's getting its own dedicated post.
+My VM for miscellaneous workloads. Currently runs Borg backup jobs for photos and Paperless documents: one containerized job per target, plus supporting containers. Easily the most interesting box in my setup right now, enough so that it's getting its own dedicated post.
 
 ---
 
 ### Not Yet Migrated
 
-OPNsense, Proxmox Backup Server, Home Assistant, and Immich are still on legacy infrastructure. They work, they're stable, and rushing migrations for the sake of consistency is how you introduce incidents. They'll join the family eventually — OPNsense is moving to dedicated hardware first, which is a natural point to rethink its configuration anyway.
+OPNsense, Proxmox Backup Server, Home Assistant, and Immich are still on legacy infrastructure. They work, they're stable, and rushing migrations for the sake of consistency is how you introduce incidents. They'll join the family eventually: OPNsense is moving to dedicated hardware first, which is a natural point to rethink its configuration anyway.
 
 ## External Access - Zero Open Firewall Ports!
 
