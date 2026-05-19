@@ -98,11 +98,11 @@ vercelAnalytics = false
 # google analytics and tag manager. to enable, set "enabled" to true
 # and add the tracking code (UA-something for analytics, GTM-something for tag manager)
 [params.analytics.googleAnalytics]
-code = "UA-XXXXX-Y"
-enabled = false
+code = "G-WDSC9QQGSH"
+enabled = true
 [params.analytics.googleTagManager]
 code = "GTM-M2S75PJ3"
-enabled = true
+enabled = false
 
 [build]
 [build.buildStats]
