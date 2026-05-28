@@ -29,7 +29,7 @@ While I really want to go crazy with more advanced topologies, my network is cur
 
 Both of my proxmox nodes are dual NIC. The node running opnsense uses both NICs: one for WAN (the incoming internet connection) and one for LAN (the rest of my internal network). I have another VM which runs my other network resources such as Technitium (my DNS), Caddy (Reverse Proxy), and Tailscale (VPN). I group these together because they’re all concerned with how traffic enters and exits the system.
 
-Here’s how it all fits together (I’ve noted some gaps I’m actively planning to fix): TODO: Add Diagram here
+Here’s how it all fits together (I’ve noted some gaps I’m actively planning to fix):
 {{< embed file="homelab-diagram.html" >}}
 
 ## Hypervisor
